@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        nav{
+            height: 70px;
+            width: 100%;
+            background-color: aquamarine;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 10%;
+
+        }
+        .nav-2{
+            gap: 5px;
+            display: flex;
+            
+        
+        }
+        .img-1{
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+            
+        }
+        section{
+            height:calc(100vh - 70px);
+         
+        }
+        body{
+            position: relative;
+        }
+        .card{
+            height: 200px;
+            width: 400px;
+            border: 1px solid black;
+            position: absolute;
+            top:50%;
+            left: 50%;
+            translate: -50% -50%;
+            background-color: rgba(0, 0, 0, 0.749);
+            color: azure;
+            font-size: 30px;
+            text-align: center;
+
+    
+        }
+        .para-1{
+            line-height: 75px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+       <p> MilesSebesta.com </p>
+        <div class="nav-2">
+            <a href="">Teaching/speaking</a>
+            <a href="">Web Design</a>
+            <a href="">Animation </a>
+            <a href="">Blog</a>
+            <a href="">Contact</a>
+        </nav>
+
+        <section>
+          
+            <div class="card">
+                <p class="para-1">Web design visalia</p>
+                <p class="para-1">locally grown visalia code</p>
+            </div>
+            <img class="img-1" src="./images/flower.1.jpg" alt="">
+        
+        </section>
+    
+</body>
+</html>

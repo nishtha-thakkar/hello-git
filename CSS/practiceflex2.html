@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Advanced Flexbox Example</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 40px;
+      background-color: #f0f4f8;
+    }
+
+    h1 {
+      color: #e30e0e;
+    }
+
+    .container {
+      display: flex;
+      border: 4px solid #007bff;
+      padding: 20px;
+      gap: 20px;
+      justify-content: space-between; /* Distribute space between boxes */
+    /* align-items: center ;  Align items vertically */
+     /* height: 300px; */
+      background-color: #e7f3ff;
+    }
+
+    .box {
+      border: 3px solid #ff5733;
+      background-color: #ffe4c4;
+      padding: 40px;
+      text-align: center;
+      flex: 1; /* Equal width by default */
+      transition: all 0.3s ease;
+    }
+
+    .box:hover {
+      transform: scale(1.05);
+      background-color: #ffd6ba;
+    }
+
+    .box2 {
+      background-color: #d4edda;
+      flex: 2; /* Make Box 2 twice the size of others */
+    }
+
+    .box3 {
+      background-color: #f8d7da;
+      align-self: flex-end; /* Align Box 3 to the bottom */
+    }
+
+    .info {
+      margin-top: 20px;
+      font-size: 1.1rem;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+      .box3 {
+        align-self: stretch; /* Stretch on small screens */
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Advanced Flexbox: Responsive Container and Boxes</h1>
+
+  <section class="container">
+    <div class="box">Box 1</div>
+    <div class="box box2">Box 2 (2x Size)</div>
+    <div class="box box3">Box 3 (Aligned Bottom)</div>
+  </section>
+
+  <p class="info">This is an advanced example using <strong>justify-content</strong>, <strong>align-items</strong>, <strong>align-self</strong>, and responsive design with media queries. Resize the browser to see how it behaves!</p>
+</body>
+</html>
