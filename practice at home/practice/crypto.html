@@ -1,0 +1,1100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      header {
+        display: flex;
+        height: 70px;
+        width: 100%;
+        /* background-color: aquamarine; */
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 8%;
+         /* position: fixed;  */
+      }
+      .nav-1 {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        font-size: 20px;
+        /* padding: 0px -10px; */
+        
+      }
+      .button-1 {
+        padding: 7px 10px;
+        border-radius: 20%;
+        background-color: blue;
+        color: white;
+        border: none;
+      }
+      .button-1:hover {
+        background-color: gray;
+        cursor: pointer;
+        transition: 3s;
+      }
+      .sec-1 {
+        /* border: 1px solid black; */
+        margin-top: 30px;
+        padding: 0 8%;
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .para-div {
+        width: 50%;
+        /* border: 1px solid green; */
+        /* text-align: center; */
+      }
+      .heading {
+        color: blue;
+      }
+      .text-1 {
+        font-size: 60px;
+        font-weight: bolder;
+        margin-top: 10px;
+      }
+      .text-2 {
+        width: 480px;
+        font-size: 20px;
+        /* margin-bottom: 20px; */
+        /* border: 1px solid red; */
+        margin-top: 20px;
+      }
+      .button-2{
+        margin-top: 40px;
+        background-color: blue;
+        color: white;
+        padding: 10px 10px;
+        border: none;
+        border-radius: 25px;
+        font-size: 20px;
+      }
+      .button-2:hover{
+        background-color: gray;
+        cursor: pointer;
+        transition: 3s;
+        box-shadow: 0px 16px 16px 16px;
+      }
+      .img-div{
+        display: flex;
+        /* padding: 0px 10%; */
+        border-radius: 10%;
+        overflow: hidden;
+      }
+      .feature-text{
+        font-size: 50px;
+        text-align: center;
+        margin-top: 30px;
+        font-weight: bolder;
+      }
+      .line{
+        height: 2px;
+        width: 100px;
+        border: 1px solid black;
+        margin: auto;
+        margin-top: 5px;
+        background-color: black;
+      }
+      .main-div-1{
+        /* border: 1px solid black; */
+        margin-top: 30px;
+        height: 100vh;
+       
+      }
+      .inner-div-1{
+        padding: 0 8%;
+        display: flex;
+        justify-content: space-between;
+
+      }
+      
+
+      
+      .card-1{
+        border: 1px solid black;
+        width: 20%;
+        /* text-align: center; */
+        padding: 2% 4%;
+        /* display: flex; */
+        border-radius: 20px;
+      }
+
+      .card-1:hover{
+        background-color: rgba(119, 136, 153, 0.132);
+
+      }
+      .inner-div-2{
+         padding: 0 8%;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 30px;
+
+
+      }
+      .about-text{
+        font-size: 50px;
+        text-align: center;
+        font-weight: bolder;
+        margin-top: 40px;
+      }
+      .main-div-2{
+        /* border: 1px solid black; */
+        display: flex;
+        padding: 0 8%;
+        margin-top: 20px;
+        height: 100vh;
+      }
+
+      .inner-div-3{
+        width: 15%;
+        font-size: 30px;
+        font-weight: bolder;
+        line-height: 1.9;
+        
+      }
+
+       .inner-div-4{
+       width: 85%;
+       font-size: 30px;
+       line-height: 1.4;
+       text-align: justify;
+      }
+
+    .traders-text{
+      font-size: 50px;
+      text-align: center;
+      font-weight: bolder;
+    }
+      .main-div-3{
+        /* border: 1px solid black; */
+        padding: 0 8%;
+        display: flex;
+        justify-content: center;
+        
+      }
+      .inner-div-5{
+        display: flex;
+        margin-top: 30px;
+        gap: 15px;
+      }
+      .card-3{
+       text-align: center;
+       width: 25%;
+       border: 1px solid grey;
+       border-radius:10% 10% 0% 0% ;
+       /* margin-bottom: 10px; */
+      }
+      .skills-text{
+        font-size: 50px;
+       text-align: center;
+       font-weight: bolder;
+       margin-top: 30px;
+      }
+      .skills-div{
+        font-size: 50px;
+        text-align: center;
+        font-weight: bolder;
+        margin-top: 190px;
+      }
+      .main-div-4{
+        /* border: 1px solid black; */
+        height: 50vh;
+        /* display: flex; */
+        padding: 0 8%;
+        /* margin-top: 90px; */
+        
+        
+      }
+      .inner-div-6{
+        display: flex;
+        /* gap: 50px; */
+        justify-content: space-between;
+        margin-bottom: 50px;
+        margin-top: 30px;
+        /* align-content: center; */
+      }
+      .inner-analysis-div{
+        width: 300px;
+        background-color:gray;
+        border: 2px solid grey;
+        
+        
+      }
+      .iner-analysis-div-1{
+        width:250px;
+        background-color: blue;
+        border: 2px solid blue ;
+      }
+      .inner-div-7{
+        display: flex;
+        /* gap: 50px; */
+        justify-content: space-between;
+       
+        
+      }
+
+      .pricing-text{
+        font-size: 50px;
+        text-align: center;
+        font-weight: bolder;
+        margin-top: 50px;
+        /* height: 90vh; */
+      }
+      .main-div-5{
+        /* border: 1px solid black; */
+        display: flex;
+        justify-content: space-between;
+        padding: 0 8%;
+        margin-top: 30px;
+        /* height: 90vh; */
+        
+      }
+      .free-text-div{
+       border: 1px solid grey;
+      }
+      .unorder-list{
+        margin-top: 30px;
+        
+      }
+      .traders-text{
+        font-size: 50px;
+        text-align: center;
+        font-weight: bolder;
+        margin-top: 150px;
+        /* height: 50vh; */
+      }
+      .main-div-6{
+        /* border: 1px solid black; */
+        display: flex;
+        padding: 0 8%;
+        justify-content: space-between;
+        /* text-align: center; */
+        
+        /* justify-content: center; */
+        margin-top: 30px;
+        height: 50vh;
+        
+      }
+      
+      
+      .text-img-div{
+        display: flex;
+        margin-top: 20px;
+      }
+      .profile-pic{
+        position: relative;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        margin-left: 10px;
+      }
+      .profile-pic img{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+      }
+      .profile-pic img:hover{
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
+       border: 5px solid blue ;
+      }
+      .checkmark{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: white;
+        color: blue;
+        font-size: 12px;
+        padding: 2px 3px;
+        border-radius: 50%;
+        border: 1px solid #ccc;
+      }
+      .background-color-section{
+        /* border: 1px solid black; */
+        background-color: #F7F4FD;
+        height: 100VH;
+        margin-top: 30PX;
+      }
+      .img-youtube-icone-div{
+        position: relative;
+        height: 400px;
+        width: 900px;
+      }
+      .crypto-img-div{
+        width: 100%;
+        height: 100%;
+        border-radius: 10%;
+        margin-left: 200px;
+        margin-top: 30px;
+
+      }
+      .youtube-img-div{
+        position: absolute;
+        bottom: 150px;
+        right: 230px;
+        
+        
+        background-color: white;
+        color: blue;
+        font-size: 12px;
+        /* padding: 2px 3px; */
+        /* border-radius: 50%; */
+        
+       
+      }
+      .line-height{
+        border: 1px solid blue;
+        height: 2px;
+        width: 100px;
+        background-color:blue;
+        margin: auto;
+        
+      }
+
+      .article-sec-div{
+        /* border: 1px solid black; */
+        margin-top: 30px;
+        height: 100vh;
+        display: flex;
+        /* padding: 0 8%; */
+        /* justify-content: space-between; */
+        /* margin: auto; */
+        justify-content: center;
+        gap: 40px;
+        
+      }
+      .card-2{
+        border: 1px solid black;
+        width: 19%;
+        height: 70vh ;
+        background-color:white;
+        border-radius: 5%
+        
+      }
+      .inner-article-sec-div{
+        position: relative;
+        height: 250px;
+        width: 240.57px;
+        
+       
+      }
+      .article-crypto-img{
+        height: 100%;
+        width: 100%;
+        border-radius: 10%;
+       margin-left: 10px;
+       margin-top: 50px;
+        
+      }
+      .client-text{
+        font-size: 50px;
+        font-weight: bolder;
+        text-align: center;
+      }
+      .line-height-2{
+        border: 1px solid black;
+        height: 2px;
+        width: 100px;
+        background-color:black;
+        margin: auto;
+        margin-top: 5px;
+
+      }
+      .main-div-7{
+        /* border: 1px solid black; */
+        height: 50vh;
+        margin-top: 30px;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+      }
+      .card-4{
+        border: 1px solid black;
+        height: 160px;
+        width: 188px;
+        background-color: #F2EFFC;
+        border-radius: 10%;
+        margin-top: 20px;
+      }
+      .card-4:hover{
+        background-color: white;
+      }
+       .main-div-8{
+        display: flex;
+        padding: 0 7%;
+        justify-content: space-between;
+      } 
+      .card-5{
+        border: 1px solid black;
+        width: 50%;
+       background-color: #F4F4F4;
+
+
+       
+      }
+      form{
+        padding: 10% 10%;
+      }
+      .main-div-9{
+        margin-top: 50px;
+      }
+      .last-footer{
+        /* border: 1px solid black; */
+        display: flex;
+        padding: 0 7%;
+        justify-content: space-between;
+        /* gap: 40px; */
+        /* height: 50vh; */
+        align-items: center;
+        margin-top: 30px;
+      }
+      .footer-para{
+        display: flex;
+        gap: 20px;
+        /* align-items: center; */
+        margin-top: 20px;
+      }
+      .inner-footer-div{
+        display: flex;
+        gap: 30px;
+        /* background-color: #727272; */
+      }
+      .card-7{
+        /* border: 1px solid black;
+        width: 50px; 
+        height: 50px; */
+        display: flex;
+        gap: 20px;
+        /* background-color: #727272; */
+        margin-top: 20px;
+        
+      }
+      /* .card-7:hover{
+        /* background-color: #727272; */
+       */
+      
+
+      
+      
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Crypto M5</h1>
+      <nav class="nav-1">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Feature</a>
+        <a href="#">Contact</a>
+        <button class="button-1">Get Started</button>
+      </nav>
+    </header>
+
+    <section class="sec-1">
+      <div class="para-div">
+        <h2 class="heading">CRYPTO PLATFORM</h2>
+        <p class="text-1">Crypto Trade</p>
+        <p class="text-1">Agency</p>
+
+        <p class="text-2">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod
+          tempor incididunt labore dolore magna aliqua.
+        </p>
+        <button class="button-2">Get Startrd</button>
+      </div>
+      <div class="img-div">
+        <img src="../IMAGES/crypto image.jpg" height="400px" width="600px" alt="">
+
+      </div>
+    </section>
+    
+
+    <section>
+        <p class="feature-text">Our Features</p>
+        <div class="line"></div>
+        <div class="main-div-1">
+          <div class="inner-div-1">
+            <div class="card-1" >
+              <img src="../IMAGES/wallet.png" alt="">
+              <p style="margin-top: 10px; font-size: 20px; font-weight: bolder;">Wallet</p>
+              <p style="width:170px; font-size: 18px; margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt.</p>
+
+            </div>
+            <div class="card-1">
+              <img src="../IMAGES/wallet.png" alt="">
+              <p style="margin-top: 10px; font-size: 20px; font-weight: bolder;">Wallet</p>
+              <p style="width:170px; font-size: 18px; margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt.</p>
+            </div>
+            <div class="card-1">
+              <img src="../IMAGES/wallet.png" alt="">
+              <p style="margin-top: 10px; font-size: 20px; font-weight: bolder;">Wallet</p>
+              <p style="width:170px; font-size: 18px; margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt.</p>
+           
+
+
+            </div>
+            <div class="card-1">
+              <img src="../IMAGES/wallet.png" alt="">
+              <p style="margin-top: 10px; font-size: 20px; font-weight: bolder;">Wallet</p>
+              <p style="width:170px; font-size: 18px; margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt.</p>
+           
+
+            </div>
+            </div>
+
+            <div class="inner-div-2">
+              <div class="card-1">
+              <img src="../IMAGES/wallet.png" alt="">
+              <p style="margin-top: 10px; font-size: 20px; font-weight: bolder;">Wallet</p>
+              <p style="width:170px; font-size: 18px; margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt.</p>
+           
+
+            </div>
+
+            <div class="card-1">
+              <img src="../IMAGES/wallet.png" alt="">
+              <p style="margin-top: 10px; font-size: 20px; font-weight: bolder;">Wallet</p>
+              <p style="width:170px; font-size: 18px; margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt.</p>
+           
+
+            </div>
+            <div class="card-1">
+              <img src="../IMAGES/wallet.png" alt="">
+              <p style="margin-top: 10px; font-size: 20px; font-weight: bolder;">Wallet</p>
+              <p style="width:170px; font-size: 18px; margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt.</p>
+           
+
+            </div>
+
+            <div class="card-1">
+              <img src="../IMAGES/wallet.png" alt="">
+              <p style="margin-top: 10px; font-size: 20px; font-weight: bolder;">Wallet</p>
+              <p style="width:170px; font-size: 18px; margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt.</p>
+           
+
+            </div>
+
+            </div>
+
+             
+        </div>
+
+    </section>
+
+    <section>
+       <p class="about-text">About Us</p>
+       <div class="main-div-2">
+        <div class="inner-div-3">
+          <div><button style="padding: 5px 5px; color: white; background-color: blue; font-size: 30px;">Wallet</button></div>
+          <div>Trade</div>
+          <div>Excahnge</div>
+
+        </div>
+        <div class="inner-div-4">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ut placerat felis. Etiam nec rhoncus purus, a sollicitudin turpis. Pellentesque sit amet justo purus. Cras ac interdum dui. Mauris placerat non metus eu venenatis. Nam eget ornare lorem, quis pulvinar lacus. Etiam mauris lorem, molestie eu sapien sed, suscipit faucibus nisi. Proin lobortis blandit mauris, sit amet tempus felis finibus fringilla. Phasellus mattis consectetur sagittis. Aenean bibendum scelerisque nulla in consequat. Nam sed lobortis velit, non porta sem. Vestibulum pharetra, lorem et malesuada volutpat, leo augue rhoncus dui, et auctor dolor arcu non ligula.</p>
+
+        </div>
+        
+
+       </div>
+    </section>
+    
+
+    
+
+    <section>
+      <p class="traders-text">Our Traders</p>
+
+      <div class="main-div-3">
+        <div class="inner-div-5">
+          <div class="card-3">
+            <img style="border-radius: 10% 10% 0% 0%; " src="../IMAGES/team1.jpg" height="400px" width="296.67px" alt="">
+            <p style="font-size: 32px; font-weight: bolder;">John Smith</p>
+            <p style="font-size: 18px; font-weight: bolder;">TRADER</p>
+            <p style="font-size: 20px; width: 300px; margin-bottom: 20px; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            
+          </div>
+          <div class="card-3">
+            <img style="border-radius: 10% 10% 0% 0%; " src="../IMAGES/team1.jpg" height="400px" width="296.67px" alt="">
+            <p style="font-size: 32px; font-weight: bolder;">John Smith</p>
+            <p style="font-size: 18px; font-weight: bolder;">TRADER</p>
+            <p style="font-size: 20px; width: 300px;  margin-bottom: 20px; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+       
+          </div>
+          <div class="card-3">
+            <img style="border-radius: 10% 10% 0% 0%; " src="../IMAGES/team1.jpg" height="400px" width="296.67px" alt="">
+            <p style="font-size: 32px; font-weight: bolder;">John Smith</p>
+            <p style="font-size: 18px; font-weight: bolder;">TRADER</p>
+            <p style="font-size: 20px; width: 300px; margin-bottom: 20px; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+       
+          </div>
+          <div class="card-3">
+            <img style="border-radius: 10% 10% 0% 0%; " src="../IMAGES/team1.jpg" height="400px" width="296.67px" alt="">
+            <p style="font-size: 32px; font-weight: bolder;">John Smith</p>
+            <p style="font-size: 18px; font-weight: bolder;">TRADER</p>
+            <p style="font-size: 20px; width: 300px; margin-bottom: 20px; ">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+       
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <section>
+      <p class="skills-div">Our Skills</p>
+      <div class="main-div-4">
+        <div class="inner-div-6">
+          <div class="analysis-div">
+            <p style="font-size: 20px; font-weight: bolder;">Analysis</p>
+            <div class="inner-analysis-div">
+              <div class="iner-analysis-div-1"></div>
+            </div>
+
+          </div>
+
+          <div class="analysis-div">
+            <p style="font-size: 20px ; font-weight: bolder;">Analysis</p>
+            <div class="inner-analysis-div">
+              <div class="iner-analysis-div-1"></div>
+            </div>
+
+          </div>
+          <div class="analysis-div">
+            <p style="font-size: 20px; font-weight: bolder;">Analysis</p>
+            <div class="inner-analysis-div">
+              <div class="iner-analysis-div-1"></div>
+            </div>
+
+          </div>
+          
+          
+          
+          
+        
+
+            </div>
+            <div class="inner-div-7">
+            <div class="analysis-div">
+            <p style="font-size: 20px; font-weight: bolder;">Analysis</p>
+            <div class="inner-analysis-div">
+              <div class="iner-analysis-div-1"></div>
+            </div>
+
+          </div>
+
+          <div class="analysis-div">
+            <p style="font-size: 20px; font-weight: bolder;">Analysis</p>
+            <div class="inner-analysis-div">
+              <div class="iner-analysis-div-1"></div>
+            </div>
+
+          </div>
+
+          <div class="analysis-div">
+            <p style="font-size: 20px; font-weight: bolder;">Analysis</p>
+            <div class="inner-analysis-div">
+              <div class="iner-analysis-div-1"></div>
+            </div>
+
+          </div>
+          </div>
+
+        </div>
+
+     
+    </section>
+
+    <section>
+      <p class="pricing-text"> Pricing Plan</p>
+      <div class="main-div-5">
+        <div class="free-text-div">
+          <p style="font-size: 48px; color: blue; text-align: center;">Free</p>
+          <p style="font-size: 20px; text-align: center;">Lorem ipsum dolor</p>
+        <button style="padding: 30px 100px;background-color: blue; color: white; margin-top: 30px;">  <p>$  <span style=" font-size: 40px;"> 0 </span>p/mo</p></button>
+        <div class="unorder-list">
+         <div> <i class="fa-solid fa-check"></i>Wallet</div>
+         <div> <i class="fa-solid fa-check"></i>Wallet</div>
+         <div> <i class="fa-solid fa-check"></i>Wallet</div>
+         <div> <i class="fa-solid fa-check"></i>Wallet</div>
+         <div> <i class="fa-solid fa-check"></i>Wallet</div>
+         </div>
+
+         <button style="background-color: blue; color: white; padding: 5px 10px; border-radius: 20%; margin-top: 30px; margin-left: 20px;">Get Started</button>
+
+
+
+
+
+        
+
+        </div>
+        <div class="free-text-div">
+          <p style="font-size: 48px; color: blue; text-align: center;">Free</p>
+          <p style="font-size: 20px; text-align: center;">Lorem ipsum dolor</p>
+        <button style="padding: 30px 100px;background-color: blue; color: white; margin-top: 30px;">  <p>$  <span style=" font-size: 40px;"> 0 </span>p/mo</p></button>
+        <div class="unorder-list">
+         <div> <i class="fa-solid fa-check"></i>Wallet</div>
+         <div> <i class="fa-solid fa-check"></i>Wallet</div>
+         <div> <i class="fa-solid fa-check"></i>Wallet</div>
+         <div> <i class="fa-solid fa-check"></i>Wallet</div>
+         <div> <i class="fa-solid fa-check"></i>Wallet</div>
+         </div>
+
+         <button style="background-color: blue; color: white; padding: 5px 10px; border-radius: 20%; margin-top: 30px; margin-left: 20px;">Get Started</button>
+
+
+       
+      </div>
+
+      <div class="free-text-div">
+          <p style="font-size: 48px; color: blue;text-align: center;">Free</p>
+          <p style="font-size: 20px; text-align: center;">Lorem ipsum dolor</p>
+        <button style="padding: 30px 100px;background-color: blue; color: white; margin-top: 30px;">  <p>$  <span style=" font-size: 40px;"> 0 </span>p/mo</p></button>
+        <div class="unorder-list">
+         <div> <i class="fa-solid fa-check"></i>Wallet</div>
+         <div> <i class="fa-solid fa-check"></i>Wallet</div>
+         <div> <i class="fa-solid fa-check"></i>Wallet</div>
+         <div> <i class="fa-solid fa-check"></i>Wallet</div>
+         <div> <i class="fa-solid fa-check"></i>Wallet</div>
+         </div>
+
+         <button style="background-color: blue; color: white; padding: 5px 10px; border-radius: 20%; margin-top: 30px; margin-left: 20px;">Get Started</button>
+
+
+      </div>
+    </section>
+
+    <section>
+      <p class="traders-text">Top Traders</p>
+      <div class="main-div-6">
+        <div class="inner-div-9">
+          <div class="text-img-div">
+
+          <p>1</p>
+          <div class="profile-pic">
+           <img src="../IMAGES/face1.jpg" alt="">
+          <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+          </div>
+
+          <p style= "width: 130px; display: flex; align-items: center;  margin-left: 10px;">Nicholas Daniels 3.5 BTC</p>
+          
+          </div>
+
+           <div class="text-img-div">
+
+          <p>1</p>
+          <div class="profile-pic">
+           <img src="../IMAGES/face1.jpg" alt="">
+          <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+          </div>
+
+          <p style= "width: 130px; display: flex; align-items: center;  margin-left: 10px;">Nicholas Daniels 3.5 BTC</p>
+          
+          </div>
+           <div class="text-img-div">
+
+          <p>1</p>
+          <div class="profile-pic">
+           <img src="../IMAGES/face1.jpg" alt="">
+          <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+          </div>
+
+          <p style= "width: 130px; display: flex; align-items: center;  margin-left: 10px;">Nicholas Daniels 3.5 BTC</p>
+          
+          </div>
+           <div class="text-img-div">
+
+          <p>1</p>
+          <div class="profile-pic">
+           <img src="../IMAGES/face1.jpg" alt="">
+          <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+          </div>
+
+          <p style= "width: 130px; display: flex; align-items: center;  margin-left: 10px;">Nicholas Daniels 3.5 BTC</p>
+          
+          </div>
+
+        </div>
+        <div class="inner-div-9">
+           <div class="text-img-div">
+
+          <p>1</p>
+          <div class="profile-pic">
+           <img src="../IMAGES/face1.jpg" alt="">
+          <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+          </div>
+
+          <p style= "width: 130px; display: flex; align-items: center;  margin-left: 10px;">Nicholas Daniels 3.5 BTC</p>
+          
+          </div>
+           <div class="text-img-div">
+
+          <p>1</p>
+          <div class="profile-pic">
+           <img src="../IMAGES/face1.jpg" alt="">
+          <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+          </div>
+
+          <p style= "width: 130px; display: flex; align-items: center;  margin-left: 10px;">Nicholas Daniels 3.5 BTC</p>
+          
+          </div>
+           <div class="text-img-div">
+
+          <p>1</p>
+          <div class="profile-pic">
+           <img src="../IMAGES/face1.jpg" alt="">
+          <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+          </div>
+
+          <p style= "width: 130px; display: flex; align-items: center; margin-left: 10px;">Nicholas Daniels 3.5 BTC</p>
+          
+          </div>
+           <div class="text-img-div">
+
+          <p>1</p>
+          <div class="profile-pic">
+           <img src="../IMAGES/face1.jpg" alt="">
+          <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+          </div>
+
+          <p style= "width: 130px; display: flex; align-items: center;  margin-left: 10px;">Nicholas Daniels 3.5 BTC</p>
+          
+          </div>
+
+        </div>
+        <div class="inner-div-9">
+          <div class="text-img-div">
+
+          <p>1</p>
+          <div class="profile-pic">
+           <img src="../IMAGES/face1.jpg" alt="">
+          <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+          </div>
+
+          <p style= "width: 130px; display: flex; align-items: center;  margin-left: 10px;">Nicholas Daniels 3.5 BTC</p>
+          
+          </div>
+           <div class="text-img-div">
+
+          <p>1</p>
+          <div class="profile-pic">
+           <img src="../IMAGES/face1.jpg" alt="">
+          <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+          </div>
+
+          <p style= "width: 130px; display: flex; align-items: center;  margin-left: 10px;">Nicholas Daniels 3.5 BTC</p>
+          
+          </div>
+           <div class="text-img-div">
+
+          <p>1</p>
+          <div class="profile-pic">
+           <img src="../IMAGES/face1.jpg" alt="">
+          <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+          </div>
+
+          <p style= "width: 130px; display: flex; align-items: center;  margin-left: 10px;">Nicholas Daniels 3.5 BTC</p>
+          
+          </div>
+           <div class="text-img-div">
+
+          <p>1</p>
+          <div class="profile-pic">
+           <img src="../IMAGES/face1.jpg" alt="">
+          <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+          </div>
+
+          <p style= "width: 130px; display: flex; align-items: center;  margin-left: 10px;">   Nicholas Daniels 3.5 BTC</p>
+          
+          </div>
+        </div>
+
+      </div>
+     
+
+    </section>
+
+    <section class="background-color-section">
+      <P style="font-size: 48px; font-weight: bolder; text-align: center; margin-top: 90px;">View in Action</P>
+      <p style="text-align: center; font-size: 19.2px; margin-top: 5px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor.</p>
+      <div class="img-youtube-icone-div">
+      <img  class="crypto-img-div"  src="../IMAGES/crypto image.jpg"   alt="">
+     <a href="https://media.istockphoto.com/id/1988605262/video/vast-field-full-of-wheat-glows-in-the-golden-morning-light.mp4?s=mp4-640x640-is&k=20&c=C8pQxrOmXuutAcjmRAqW1GLK7JmbnnmYx7zY7J8ItGs="> <img  class="youtube-img-div" src="../IMAGES/icons8-youtube-50 (1).png" alt=""></a>
+      </div>
+      
+    </section>
+    <section>
+      <p style="text-align: center; font-size: 50px; font-weight: bolder; margin-top: 30px;">Our Article</p>
+      <div class="line-height"></div>
+      <div class="article-sec-div">
+        <div class="card-2">
+        <div class="inner-article-sec-div">
+          <img  class="article-crypto-img" src="../IMAGES/crypto image.jpg" alt="">
+          <div style="position: absolute; top: 0; top: 20px;" class="profile-pic">
+           <img src="../IMAGES/face1.jpg" alt="">
+          <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+          </div>
+          <p style="margin-left: 10px; font-size: 20px; font-weight: bolder; margin-top: 10px;">Crypto Wallets</p>
+          <p style="margin-left: 10px;  font-size: 20px; color: grey; margin-top: 10px;">Lorem ipsum dolor</p>
+          <p style="margin-left: 10px; font-size: 20px; margin-top: 10px; color: blue;">Read more</p>
+          </div>
+
+        </div>
+         <div class="card-2">
+        <div class="inner-article-sec-div">
+          <img  class="article-crypto-img" src="../IMAGES/crypto image.jpg" alt="">
+          <div style="position: absolute; top: 0; top: 20px;" class="profile-pic">
+           <img src="../IMAGES/face1.jpg" alt="">
+          <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+          </div>
+          <p style="margin-left: 10px; font-size: 20px; font-weight: bolder; margin-top: 10px;">Crypto Wallets</p>
+          <p style="margin-left: 10px;  font-size: 20px; color: grey; margin-top: 10px;">Lorem ipsum dolor</p>
+          <p style="margin-left: 10px; font-size: 20px; margin-top: 10px; color: blue;">Read more</p>
+          </div>
+
+        </div>
+        <div class="card-2">
+        <div class="inner-article-sec-div">
+          <img  class="article-crypto-img" src="../IMAGES/crypto image.jpg" alt="">
+          <div style="position: absolute; top: 0; top: 20px;" class="profile-pic">
+           <img src="../IMAGES/face1.jpg" alt="">
+          <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+          </div>
+          <p style="margin-left: 10px; font-size: 20px; font-weight: bolder; margin-top: 10px;">Crypto Wallets</p>
+          <p style="margin-left: 10px;  font-size: 20px; color: grey; margin-top: 10px;">Lorem ipsum dolor</p>
+          <p style="margin-left: 10px; font-size: 20px; margin-top: 10px; color: blue;">Read more</p>
+          </div>
+
+        </div>
+        <div class="card-2">
+        <div class="inner-article-sec-div">
+          <img  class="article-crypto-img" src="../IMAGES/crypto image.jpg" alt="">
+          <div style="position: absolute; top: 0; top: 20px;" class="profile-pic">
+           <img src="../IMAGES/face1.jpg" alt="">
+          <span class="checkmark"><i class="fa-solid fa-check"></i></span>
+          </div>
+          <p style="margin-left: 10px; font-size: 20px; font-weight: bolder; margin-top: 10px;">Crypto Wallets</p>
+          <p style="margin-left: 10px;  font-size: 20px; color: grey; margin-top: 10px;">Lorem ipsum dolor</p>
+          <p style="margin-left: 10px; font-size: 20px; margin-top: 10px; color: blue;">Read more</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+    <section>
+      <p class="client-text">Our Clients</p>
+      <div class="line-height-2"></div>
+
+      <div class="main-div-7">
+        <div class="card-4">        
+          <div class="mobirise-img-div">
+          <img style="margin-top: 20px;"; src="../IMAGES/mobirise.png" height="92px" width="140px" alt="">
+          </div>
+
+        </div>
+        <div class="card-4">        
+          <div class="mobirise-img-div">
+          <img style="margin-top: 20px;"; src="../IMAGES/mobirise.png" height="92px" width="140px" alt="">
+          </div>
+
+        </div>
+        <div class="card-4">        
+          <div class="mobirise-img-div">
+          <img style="margin-top: 20px;"; src="../IMAGES/mobirise.png" height="92px" width="140px" alt="">
+          </div>
+
+        </div>
+       <div class="card-4">        
+          <div class="mobirise-img-div">
+          <img style="margin-top: 20px;"; src="../IMAGES/mobirise.png" height="92px" width="140px" alt="">
+          </div>
+
+        </div>
+        <div class="card-4">        
+          <div class="mobirise-img-div">
+          <img style="margin-top: 20px;"; src="../IMAGES/mobirise.png" height="92px" width="140px" alt="">
+          </div>
+
+        </div>
+        <div class="card-4">        
+          <div class="mobirise-img-div">
+          <img style="margin-top: 20px;"; src="../IMAGES/mobirise.png" height="92px" width="140px" alt="">
+          </div>
+
+        </div>
+      
+    </section>
+    <section class="main-div-8">
+      <div>
+      <p style="font-size: 60px; font-weight: bolder; width: 400px">Hold or Trade Cryptocurrency</p>
+      <p style="font-size: 20px; color: #353535; width: 400px; margin-top: 10px; text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed eiusmod tempor incididunt labore dolore magna aliqua.</p>
+      </div>
+      <div class="card-5">
+        <form action="">
+          <p style="font-size: 32px; font-weight: bolder;">Contact Us</p>
+          <p style="font-size: 20px; color: #727272; width: 400px; margin-top: 10px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed eiusmod temp.</p>
+          <div>
+            
+            <input style="width: 340px;height: 40px; margin-top: 10px;" type="text" placeholder="Your Name">
+          </div>
+
+           <div>
+            
+            <input style="width: 340px; height:40px ; margin-top: 10px;" type="email" placeholder="Email">
+          </div>
+
+           <div>
+            
+            <textarea style="width: 340px; height: 50px; margin-top: 10px; " name="Message" placeholder="Message" id=""></textarea>
+
+            <div>
+              <button style="padding: 10px 15px; border-radius: 20%;  background-color: blue; color: white;  margin-top: 20px;">Send Message</button>
+            </div>
+           
+
+        </form>
+
+      </div>
+
+    </section>
+
+    <section>
+      <div class="main-div-9">
+       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d48361.28755171248!2d-73.984859!3d40.749256!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c259a9b30eac9f%3A0xaca05ca48ab5ac2c!2s350%205th%20Ave%2C%20New%20York%2C%20NY%2010118!5e0!3m2!1sen!2sus!4v1750751729251!5m2!1sen!2sus" width="100%;"  height="450;" style="border:0;"   allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
+    <footer class="last-footer">
+      <div class="footer-para">
+        <p style="font-size: 30px; font-weight: bolder;">Crypto M5</p>
+        <p style="margin-top: 10px;">© Copyright 2025 Mobirise</p>
+
+      </div>
+      <div class="inner-footer-div">
+      <div class="card-7">
+        <img style="margin-top: 5px;" src="../IMAGES/2227.jpg" width="40px" height="40px" alt="">
+      </div>
+      <div class="card-7">
+        <img style="margin-top: 5px;" src="../IMAGES/2227.jpg" width="40px" height="40px" alt="">
+      </div>
+      <div class="card-7">
+        <img style="margin-top: 5px; " src="../IMAGES/2227.jpg" width="40px" height="40px" alt="">
+      </div>
+      <div class="card-7">
+        <img style="margin-top: 5px; " src="../IMAGES/2227.jpg" width="40px" height="40px" alt="">
+      </div>
+      </div>
+    </footer>
+
+       
+  </body>
+</html>
