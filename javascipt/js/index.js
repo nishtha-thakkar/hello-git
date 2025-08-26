@@ -16,7 +16,7 @@ let princessName = "Barbi"
 console.log(princessName);
 
 let heroName = "varundhawan"
-console.log(heroName)
+console.log(heroName);
 
 // types of Data
 //     there are two types of Data
@@ -60,7 +60,7 @@ console.log(typeof isFollow);
     console.log(typeof studentName);
 
 //  5.null
-//  absent ofan object (data type is object)   
+//  absent ofan object (data type is object) 
 
 let price = null;
 console.log(price);
