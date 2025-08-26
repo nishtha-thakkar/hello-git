@@ -14,7 +14,7 @@ console.log(strength);
 // Change the variable again to store your mother's name.
 // Print the value stored in the variable name
 
-let myName = "Nishtha";
+let myName = "Nishtha"
 console.log("myName is",myName);
 
 let fatherName = "Mahendrabhai"
