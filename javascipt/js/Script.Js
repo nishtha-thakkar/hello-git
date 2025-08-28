@@ -55,6 +55,329 @@ console.log(++d);
 console.log(d++);
 console.log(d);
 
+// 2. Assignment operator- to assign the value. means to assign the value of variable
+// = equal to
+// += plus 
+// -= Minus 
+// *= multiply 
+// /= divide 
+// %= module - the result is in reminder value 
+// **= expontiation - power - ex 5*5 = 25
+
+// in assignmnent operator the value is going right to left jene propegate kahevai -right side se value left side jay che
+
+let x = 5;
+let y = 2;
+
+// 1.=
+// 5 value assign in the a - right to left means value of x is 2
+
+x = y 
+console.log(x);
+
+// 2. +=  x+=4; / x=x+4 = 9
+
+x += 4;
+console.log("x=",x);
+
+// 3. -=
+
+x -= 4;
+console.log("x = ", x);
+
+// 4. multiply *
+
+x *= 4;
+console.log("x = ",x);
+
+// 5. divide /
+
+x /= 4;
+console.log("x = ",x); 
+
+// 6. module % - get result in reminder value
+
+x %= 11;
+console.log("x = ", x);
+
+// 7. Expontiation - power ** - ^
+
+x **= 4;
+console.log("x = " , x);
+
+
+
+// 3. comparison operator- to compare the two value
+
+// ans is yes or No 
+
+// 1.equal to ==  ,  not equal to !=
+ 
+// 2.equal to & type === , not eqtal to & type !==  - strickly check -most of use in this operator
+
+// > grater than , >= grater than wqual to
+// < less than , <= less than wqual to
+
+
+// 1.equal to ==  ,  not equal to !=
+ 
+// **equal to
+let raj = 70;
+let nisha = 50;
+
+console.log("raj==nisha = ", raj===nisha);
+
+// example
+
+let h = "40";
+let i = 40;
+
+console.log("h==i =" , h==i);
+
+// **not eqtal to
+
+let yashraj = 70;
+let priya = 50;
+
+console.log("yashraj!=priya ", yashraj!=priya);
+
+// example
+
+let g = 40;
+let o = 40;
+
+console.log("g!=o =" , g!=o);
+
+
+
+//  2.equal to & type === , not eqtal to & type !==  - strickly check -most of use in this operator
+
+let bulbul = "60";
+let vikram = 60;
+
+console.log("bulbul===vikram = ", bulbul===vikram );
+
+
+// example
+
+
+let ww = 120;
+let rr = -120;
+
+console.log("ww===rr = " , ww===rr);
+
+
+// **not eqtal to
+
+let java = 550;
+let seva = -550;
+
+console.log("java!==seva = " , java!==seva);
+
+// example
+
+let tt = 450;
+let dd = 450;
+
+console.log("tt!==dd = " , tt!==dd);
+
+
+// 4. logical operator - ans is in true and flase
+
+// Logical operators in JavaScript are used to combine or manipulate boolean expressions, resulting in a single
+//  boolean value (true or false). They are essential for building complex conditional logic within your code.
+
+// There are three primary logical operators in JavaScript:
+
+// 1.Logical AND (&&):
+// 2.Logical OR (||):
+// 3.Logical NOT (!):
+
+// 1.
+// Logical AND (&&): This operator returns true only if both operands evaluate to true. 
+// If either operand is false, the entire expression becomes false.
+
+    // console.log(true && true);   // Output: true
+    // console.log(true && false);  // Output: false
+    // console.log(false && true);  // Output: false
+    // console.log(false && false); // Output: false
+
+    let q = 60;
+    let t = 50;
+
+    console.log("60>50 && 60===60 = " , 60>50 && 60===60);
+    console.log("60>50 && 60===50 = " , 60>50 && 60===50);
+
+
+    // 2. Logical OR (||): This operator returns true if at least one of the operands evaluates to true. 
+    // It only returns false if both operands are false
+
+    // console.log(true || true);   // Output: true
+    // console.log(true || false);  // Output: true
+    // console.log(false || true);  // Output: true
+    // console.log(false || false); // Output: false
+
+    let n = 90;
+    let z = 10;
+
+    console.log("90>10 || 90===10 = ", 90>10 || 90===10);
+    console.log("90<10 || 90===90 = ", 90<10 || 90===90);
+     console.log("90<10 || 90===10 = ", 90<10 || 90===10);
+
+
+    //  3.Logical NOT (!): This is a unary operator that reverses the boolean value of its single operand.
+    //  If the operand is true, it returns false, and if the operand is false, it returns true. 
+
+    // console.log(!true);  // Output: false
+    // console.log(!false); // Output: true
+
+
+    let yy = 40;
+    let uu = 50;
+
+    console.log( "!(40<50) = " , !(40<50) );
+    console.log( "!(40>50) = " , !(40>50) );
+
+    // conversion - to come in implicit - tochange maually data type
+
+    // In JavaScript, "conversion" refers to the process of changing a value from one data type to another.
+    //  This is also commonly known as "type conversion" or "type casting." JavaScript,
+    //  being a dynamically and weakly-typed language, handles type conversions in two primary ways: 
+// Explicit Type Conversion (Type Casting): This involves manually converting a value from one type to another
+//  using built-in functions or constructors. This provides more control over the conversion process.
+//  Common explicit conversion functions include:
+
+// Number(): Converts a value to a number.
+// String(): Converts a value to a string.
+// Boolean(): Converts a value to a boolean.
+// parseInt(): Parses a string and returns an integer.
+// parseFloat(): Parses a string and returns a floating-point number.
+
+    let number = "30"
+    console.log("number = ",number);
+    console.log( typeof number);
+
+    // now we covert string into no
+ let result = Number(number);
+ console.log(result);
+ console.log( typeof result);
+
+//  ex 
+
+ let number1 = 30
+    console.log("number1 = ",number1);
+    console.log( typeof number1);
+
+ // now we covert no into string
+ let result2 = String(number1);
+ console.log(result2);
+ console.log( typeof result2);
+
+
+//  Implicit Type Conversion (Coercion): This occurs automatically when JavaScript encounters 
+// an operation or context that requires a value of a different type. 
+// For instance, when adding a number and a string using the + operator, 
+// JavaScript implicitly converts the number to a string to perform string concatenation.
+
+// JavaScript
+
+
+//     let result = 5 + "hello"; // 5 is implicitly converted to "5"
+//     console.log(result); // Output: "5hello"
+
+
+
+
+// ?In JavaScript, string concatenation refers to the process of combining two or more strings into a single, 
+// new string. Several methods can be used to achieve this: using the + operator. 
+// This is the most common and straightforward method. The + operator, typically used for addition, 
+// also performs string concatenation when one or both operands are strings.
+
+let firstword = "lok";
+let secondword = "shabha";
+
+console.log("firstword+secondword =" , firstword+secondword);// concatinate
+
+console.log("15" + 5);//corcioun
+
+console.log("15" + (45+5));//corcioun
+
+console.log("15" - 5);//corcioun
+
+
+// shortcut of convert number into  string
+
+console.log(+"25");
+console.log(+"25" + 5);
+
+// javascript true ki value koh 1 kehta hai or false ki value koh 0 kehta hai
+
+console.log(5 + true);
+
+console.log(6 + true);
+
+console.log(6 + false);
+
+
+
+// how to take average 
+
+let math = 40;
+let science = 50;
+let english = 90;
+let history = 55;
+
+
+let average = (math + science + english + history) / 4;
+
+console.log(average);
+
+// "Brackets are necessary to calculate the average." either this value calculate on BODMAS according;
+
+// history/4 then it calculate all addition 
+// ex - 55/4 +90+50+40
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
