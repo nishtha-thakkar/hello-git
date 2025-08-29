@@ -300,7 +300,7 @@ console.log("firstword+secondword =" , firstword+secondword);// concatinate
 
 console.log("15" + 5);//corcioun
 
-console.log("15" + (45+5));//corcioun
+console.log("15" +  (45+5));//corcioun
 
 console.log("15" - 5);//corcioun
 
@@ -336,6 +336,137 @@ console.log(average);
 
 // history/4 then it calculate all addition 
 // ex - 55/4 +90+50+40
+
+
+
+// Swapting method
+
+// third party involment
+
+let rakesh = 40;
+let rakhi = 90;
+
+let temp = rakesh;
+
+rakesh=rakhi;
+ rakhi = temp;
+
+ console.log(rakesh);
+ console.log(rakhi);
+
+
+//  without any third party
+
+let m = 40;
+let p = 50;
+
+m = m + p
+console.log("m+p = = " , m);   
+//  40+50=90
+
+p = m - p 
+console.log("p = " ,p);
+
+// p ki value 40 ayegi because of m ki value 90-50
+
+
+m = m - p
+
+// 90 - 40
+
+console.log("m = " , m);
+
+
+//conditional statement - to implement some condition in the code
+
+// ()- this is called parethesis
+
+// if the condition is true thrn block will execute
+
+// if statement 
+
+let score = 95;
+
+if(score>90){
+    console.log("you will get a bike")
+}
+
+let score2 = 75
+
+if(score2>90){                           // in this condition you did not get 90 or above marks so ans ia in false the code wii not execute
+    console.log("you will get a bike") 
+}
+
+
+// if-else statement
+
+// in this situation if  statement not work then else code will execute
+
+let age = 25;
+
+if(age>18) {
+    console.log("you are eligible to get a license")
+}else{
+    console.log("you are not eligile")
+}
+
+let age2 = 17;
+
+if(age2>18) {
+    console.log("you are eligible to get a license")
+}else{
+    console.log("you are not eligile")
+}
+
+// odd/even no
+
+let number2 = 12;
+
+if(number2 % 2 === 0){
+    console.log("even number")
+}else{
+    console.log("odd no")
+}
+
+let number3 = 12;
+
+if(number3 % 2 === 1){
+    console.log("even number")
+}else{
+    console.log("odd no")
+}
+
+
+// // ""
+// // ''
+// ''
+
+// to print the statement we can write in string
+
+let marks = 50;
+console.log(`marks = ${marks}`) // best and better technique to write
+
+
+let marks2 = 80;
+console.log("marks2 = " , marks2);
+
+let marks3 = 66;
+console.log('marks3 = ' , marks3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
