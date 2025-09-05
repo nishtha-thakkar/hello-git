@@ -118,6 +118,6 @@ if(time<7){
 
 
 
-let temperature1 = 32;
+let temperature1 = 31;
 
 
