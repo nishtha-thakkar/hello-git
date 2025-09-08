@@ -1,4 +1,6 @@
-// loop
+// loop In JavaScript, a loop is a programming tool that allows you to repeatedly execute a block of code until 
+// a certain condition is met. Instead of writing the same code multiple times, you can use a loop to automate
+//  repetitive tasks, making your code more efficient and concise. 
 
 // console.log(1);
 // console.log(2);
@@ -77,6 +79,25 @@ while(i4<=50){
 for(let i3 = 1; i3<=12;i3++) {
     console.log(i3);
 }
+
+
+let sum2 = 30;
+
+for(let i4 = 10 ; i4<=15 ; i4++){
+    sum2 = sum2+i4
+}
+console.log("sum2 = ", sum2);
+
+
+let sum3 = 0
+
+for(let i = 2; i<=50; i++){
+
+    if(i%2===0)
+
+    sum3 = sum3+i
+}
+console.log("sum3 = " , sum3)
 
 
 

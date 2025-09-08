@@ -69,13 +69,13 @@ if(light==="Red"){
 // - If the bill is between $50 and $100, give a 10% discount.
 // - If the bill is more than $100, give a 20% discount.
 
-let amount = "$70";
+let amount = 70;
 
-if(amount<"$50"){
+if(amount<50){
     console.log("you will get no discount.");
-}else if(amount>="$50" && amount<="$100"){
+}else if(amount>=50 && amount<=100){
     console.log("you will get 10% discount.")
-}else if(amount>"$100"){
+}else if(amount>100){
     console.log(" you will get 20% discount.")
 }else{
     console.log("you will get a small gift on  any purchse the product")
