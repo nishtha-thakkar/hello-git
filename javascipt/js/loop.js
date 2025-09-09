@@ -101,5 +101,32 @@ console.log("sum3 = " , sum3)
 
 
 
+// 2. exit loop 
+
+//  do while // if code is false but still code will execute at least one time.
+
+
+let k = 1;
+do{
+    console.log(k)
+    k++
+}while(k<=5);
+
+
+let l = 2;
+do{
+    l++
+    console.log(l)
+}while(l<=5)
+
+
+ let j = 1;
+ do{
+    console.log(j)
+    j++
+ } while(j<=0);  
+
+
+
 
 
