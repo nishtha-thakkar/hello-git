@@ -65,14 +65,7 @@ for(let i3 = 1 ; i3<=5 ; i3++){
 
 
 
-// let number3 = 6;
-
-// for(let i4 = 3 ; i4<=number3 ; i4++){
-//     str = ""
-//     for(let m = 3 ; m<=i4 ; m++)
-//         str = str+m
-//     console.log(str)
-// }
+44.
 
 
 
