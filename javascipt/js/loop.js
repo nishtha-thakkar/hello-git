@@ -124,7 +124,145 @@ do{
  do{
     console.log(j)
     j++
- } while(j<=0);  
+ } while(j<=0)
+
+    console.log("break")
+
+
+
+
+
+// nested for loop
+
+    // ques-
+
+    // 1
+    // 12 
+    // 123
+    // 1234
+    // 12345
+
+
+
+
+
+
+   let number = 5
+   for (let i = 1 ; i<=number ; i++){ 
+    let str = "" 
+    for(let k = 1 ; k<=i ; k++)
+        str = str+k              
+    console.log(str)
+   }
+
+   console.log("complete loop")
+
+
+//str = ""
+
+// Inner loop:
+
+// k = 1 → str = "" + "1" = "1"
+ 
+
+// str = "" (reset again at start of outer loop)
+
+// Inner loop:
+
+// k = 1 → str = "1"
+
+// k = 2 → str = "12"
+
+// Print → 12
+
+
+// let number = 5
+//    for (let i = 1 ; i<=number ; i++){   //2
+//     let str = ""                        //1
+//     for(let k = 1 ; k<=i ; k++)          //2
+//         str = str+i                      12
+//     console.log(str)
+//    }
+
+
+
+
+///functions-js is a single threaded language dynamic language -top se bottom tak line execute because of interpreter - interpreter mean line by line check
+
+// functions(block of code)
+
+//1.normal function
+
+//function  show - function is keyword and show is name of the function
+
+//ex - function name is use for call
+console.log("ex-1")
+function show(){
+    console.log(1)
+
+}
+show()
+
+console.log("complete 1 ex of function")
+
+console.log("ex-2")
+// 2.
+
+function show1(){
+    console.log(1)
+}
+function show2(){
+    console.log(2)
+}
+function show3(){
+    console.log(3)
+}
+function show4(){
+    console.log(4)
+}
+function show5(){
+    console.log(5)
+}
+
+show1()
+show4()
+show2()
+show5()
+show3()
+
+console.log("complete 2 ex of function")
+
+
+// ex-3 to declare the funtion name before insted of last , work same no change
+
+console.log("ex-3")
+barbi()
+function barbi(){
+    console.log("princess")
+}
+
+console.log("complete 3 ex of function")
+
+
+//4.
+
+console.log("ex-4")
+
+function sum(){
+    let a = 15;
+    let b = 12;
+
+    console.log("a+b = ", a+b)
+}
+
+sum()
+
+console.log("complete 4 ex of function")    
+
+
+
+
+
 
 
 
