@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .header {
+        /* height: 1440px; */
+        width: 100%;
+        /* border: 1px solid black; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 40px;
+        /* background-color: lightgray; */
+      }
+
+      .logo img {
+        /* height: auto; */
+        width: 180px;
+      }
+      nav {
+        display: flex;
+        /* flex: 1; */
+        gap: 20px;
+        align-items: center;
+        justify-content: center;
+        /* margin-left: 260px; */
+      }
+
+      nav a {
+        text-decoration: none;
+        color: black;
+        font-size: 16px;
+      }
+
+      nav select {
+        border: none;
+        font-size: 16px;
+        background: transparent;
+      }
+
+      .button button {
+        padding: 10px 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        /* text-decoration: none; */
+      }
+
+      /* responsive */
+
+      @media (max-width: 800px) {
+        .header {
+          flex-direction: column;
+          align-items: flex-start;
+          padding: 20px;
+          /* width: 1214px; */
+          /* height: 500px; */
+        }
+        .nav {
+          flex-direction: column;
+          align-items: flex-start;
+          width: 100%;
+          gap: 10px;
+          margin-top: 10px;
+          display: none;
+          /* width:900px ; */
+        }
+        .button {
+          width: 100%; 
+          flex-direction: column;
+          align-items: flex-end; 
+        }
+
+        /* .button button {
+          width: 100%;
+          justify-content: center;
+        } */
+      }
+      .home-sec-2 {
+        margin-top: 1rem;
+        /* position: absolute; */
+        /* display: flex; */
+        /* display: block; */
+        /* height: 1214px;
+        width: 1031px; */
+        display: flex;
+        /* padding: 0 40px; */
+      }
+
+      .img-text-div {
+        position: relative;
+        /* display: inline-block; */
+        width: 100%;
+      }
+
+      .img-robot {
+        width: 100%;
+        /* overflow: hidden; */
+        /* position: relative; */
+      }
+
+      .para-1 {
+        position: absolute;
+        top: 8rem;
+        margin-left: 3rem;
+
+        /* color: ; */
+      }
+      .para-1 h1 {
+        font-size: 60px;
+        width: 55%;
+        /* display: flex; */
+        /* flex: 1; */
+        /* font-family: 'Times New Roman', Times, serif; */
+        word-wrap: break-word;
+      }
+      .para-1 .info {
+        /* font-family: Arial, Helvetica, sans-serif; */
+        width: 55%;
+        /* border: 1px solid black; */
+        margin-top: 1rem;
+        word-wrap: break-word;
+        font-size: 18px;
+      }
+      .para-1 .btn-group{
+        display: flex;
+       align-items: center;
+       margin-top: 2rem;
+      }
+
+    .para-1 .btn-group button {
+       margin-right: 15px;   /* spacing between buttons*/
+}
+
+      .para-1 .button-2 {
+        padding: 10px 10px;
+        background-color: black;
+        color: white;
+        border: none;
+        /* border-radius: 4px; */
+        cursor: pointer;
+        /* display: flex; */
+        /* align-items: center; */
+        /* margin-top: 2rem; */
+      }
+
+      .para-1 .button-3 {
+        padding: 10px 10px;
+        /* background-color: black; */
+        color: rgb(6, 5, 5);
+        border: none;
+        /* border-radius: 4px; */
+        cursor: pointer;
+        /* display: flex; */
+        /* align-items: center; */
+        background-color: lightgray;
+
+
+      }
+
+      /* .gradient{
+    position: absolute;
+    right: 10rem;
+    top: 0rem;
+    margin-top: 5rem;
+    right:-10rem */
+
+      .experience {
+        position: absolute;
+        top: 40px;
+        right: 15rem;
+        background: linear-gradient(90deg, #3ba9ff, #6a5bff);
+        padding: 20px 0px;
+        border-radius: 10px;
+        color: white;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        /* text-align: center; */
+        /* flex-direction: column; */
+        gap: 8px;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+        /* width: 9%;
+  height: 14%; */
+      }
+
+      .experience p {
+        /* margin: 0; */
+        line-height: 1.2;
+        /* width: 60px; */
+      }
+
+      .experience span {
+        /* font-size: 14px;
+        font-weight: normal;
+        /* width: 5%; */
+        /* border: 1px solid black; 
+        -bottom: 3rem;margin */
+      }
+
+      .rating{
+        position: absolute;
+       bottom: 6rem;
+       right: 29rem;
+      }
+
+      @media (max-width: 1200px) {
+        .home-sec-2 {
+          flex-direction: column;
+          /* align-items: flex-start; */
+          /* width: 100%; */
+          /* display: block; */
+          width: 1214px;
+          height: 910px;
+        }
+        .img-text-div {
+          /* flex-direction: column; */
+          /* align-items: flex-start; */
+          width: 100%;
+          /* display: inline-block; */
+        }
+        .img-robot{
+          width: 100%;
+          
+        }
+        .para-1 h1 {
+          flex-direction: column;
+          /* align-items: flex-start; */
+          /* width: 100%; */
+        }
+
+        .para-1 .info {
+          flex-direction: column;
+          /* align-items: flex-start; */
+          /* width: 50%; */
+        }
+        .para-1 .button-2 {
+          /* width: 50%; */
+          justify-content: center;
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        .para-1 .button-3 {
+          flex-direction: column;
+          align-items: flex-start;
+          /* width: 50%; */
+          justify-content: center;
+        }
+        
+          .experience{
+            flex-direction: row;
+            align-items: flex-end;
+            justify-content: end;
+            /* width: 100%; */
+          }
+
+          .rating{
+            flex-direction: row;
+            align-items: flex-start;
+            /* width: 100%; */
+            right: 3rem;
+          }
+        
+      }
+
+      .about-us-div{
+       margin-top: 2rem;
+       padding: 0 40px;
+      
+      }
+
+      .main-div-about-us{
+        /* border: 1px solid green; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        right: 2rem;
+        /* align-items: center; */
+
+
+      }
+      .img-collegues-div img{
+        width: 100%;
+        /* border-radius: 10px; */
+        max-width: 600px;
+        height: auto;
+        object-fit: cover;
+        overflow: hidden;
+        display: block;
+        /* margin: 0;
+        padding: 0;
+         */
+         margin: 0;
+         padding: 0;
+
+      }
+      .about-us-text-div {
+        max-width: 900px;
+        /* border: 1px solid red; */
+        /* padding: opx 30px; */
+        /* overflow: hidden; */
+      }
+
+      .about-us-text-div h2{
+        /* color:linear-gradient(90deg, #3ba9ff, #6a5bff);  */
+        margin-top: 2rem;
+        /* margin-right: 3rem; */
+        /* border: 1px solid black; */
+        /* overflow: hidden; */
+        font-size: 30px;
+
+
+      }
+            .about-us-text-div h1{
+              max-width: 600px;
+              /* border: 2px solid blue; */
+              font-size: 40px;
+              line-height: 1.3;
+              margin-top: 1rem;
+            }
+            .about-us-text-div p{
+              /* border: 1px solid yellowgreen; */
+              margin-top: 2rem;
+              font-size: 18px;
+              max-width: 680px ;
+              font-weight: 800px;
+
+            }
+
+            .about-us-text-div h3{
+              margin-top: 2rem;
+            }
+
+            .about-us-text-div ul{
+              margin-top: 10px;
+              padding-left: 20px;
+            }
+
+            .about-us-text-div ul li{
+              line-height: 1.9;
+            }
+
+          /* responsive */
+        
+        
+          @media (max-width: 1024px) {
+
+         
+         
+  .main-div-about-us {
+    grid-template-columns: 1fr; /* 2 column → 1 column */
+    text-align: center;
+     
+  }
+   .img-collegues-div img {
+    max-width: 80%; /*full width*/
+    height: auto;
+   
+   
+  }
+
+  .about-us-text-div {
+    margin: 0 auto;
+    max-width: 90%; /* content thodu shrink */
+  }
+
+  .about-us-text-div h1 {
+    font-size: 32px; /* font thodu nano */
+    /* justify-content: center; */
+  }
+
+  .about-us-text-div p {
+    font-size: 16px;
+    /* text-align: center; */
+  }
+}
+@media (max-width: 768px) {
+  .main-div-about-us {
+    grid-template-columns: 1fr; /*sirf ek column*/
+    text-align: center;
+  }
+
+  .img-collegues-div img {
+    max-width: 100%; /*full width*/
+    height: auto;
+  }
+
+  .about-us-text-div {
+    max-width: 100%;
+     padding: 0 10px; /*side space */
+  }
+
+  .about-us-text-div h1 {
+    font-size: 24px; /* aur nano */
+    line-height: 1.4;
+  }
+
+  .about-us-text-div p {
+    font-size: 14px;
+  }
+}
+          
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="./images/Screenshot 2025-09-10 220139.png" alt="" />
+      </div>
+      <nav>
+        <a href="#Home"> <u>Home</u></a>
+        <a href="#About us">About us</a>
+        <a href="">
+          <select name="" id="">
+            <option value="">Ourservice</option>
+          </select>
+        </a>
+        <a href="">Contact us</a>
+      </nav>
+      <div class="button">
+        <button>
+          Get in touch <img src="./images/arrow-right.png" alt="" />
+        </button>
+      </div>
+    </header>
+
+    <section class="home-sec-2">
+      <div class="img-text-div">
+        <img class="img-robot" src="./images/Rectangle 2.png" alt="" />
+
+        <div class="para-1">
+          <p>AxionX Digital</p>
+
+          <h1>Engineering Excellence for AI & open Source</h1>
+          <p class="info">
+            We build LLM evaluation datasets, validate complex repositories ,
+            and ship production-grade tooling. Rust . Java . Javascript . Python
+            . Go . Docker . CI / CD
+          </p>
+          <div class="btn-group">
+          <button class="button-2">
+            Talk to us <img src="./images/arrow-right.png" alt="" />
+          </button>
+          <button class="button-3">
+            Our service
+            <img style="color: black" src="./images/arrow left.png" alt="" />
+          </button>
+          </div>
+
+        </div>
+
+        <div class="experience">
+          <img src="./images/Group.png" alt="" />
+          <p>
+           <span> 20 +</span><br>
+            years of exp 
+          </p>
+        </div>
+
+        <div class="rating">
+
+          <img src="./images/Group 1621.png" alt="">
+
+        </div>
+      </div>
+    </section>
+
+    <section  class="about-us-div">
+      <div class="main-div-about-us">
+        <div class="img-collegues-div">
+          <img src="./images/Rectangle 45 (1).png" alt="">
+
+        </div>
+
+        <div class="about-us-text-div">
+          <h2>About us</h2>
+          <h1>Lorem Ipsum is simply dummy text of the printing.</h1>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+
+          <h3>Why teams choose AxionX</h3>
+          <ul>
+        <li>Battle-tested OSS expertise</li>
+        <li>Reproducible, Dockerized environments for evaluation at scale</li>
+        <li>Production-readiness mindset: security, performance, maintainability</li>
+        <li>Flexible engagement: pods, staff augmentation, or turnkey delivery</li>
+          </ul>
+
+        </div>
+
+      </div>
+
+    </section>
+  </body>
+</html>
