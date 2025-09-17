@@ -39,7 +39,7 @@
 
 let i = 1;
 
-while(i<=10000){      // 1<=10000 , 2<=10000(true) , 3(true), 9999<=10000(true) , 10000<=10000(true) , 10001<=10000(flase) break the code here
+while(i<=100){      // 1<=10000 , 2<=10000(true) , 3(true), 9999<=10000(true) , 10000<=10000(true) , 10001<=10000(flase) break the code here
     console.log(i)  // 1 , 2 , 3 , 9999 ,10000
     i++    //2 , 3 , 4 , 10000 ,10001
 }
@@ -257,14 +257,130 @@ function sum(){
 
 sum()
 
-console.log("complete 4 ex of function")    
+console.log("complete 4 ex of function")   
 
 
+// how many ways to create a functions
+
+// 1.normal functions 
+// 2. anonymous function 
+// 3. arrow function 
+// 4. variable function
+
+// 1.normal function
+ // 1 example
+function show(){
+    console.log("javascript")
+}
+show()
+
+//2 ex
+
+josh()         // we can call the function before the function
+function josh()
+{
+    console.log("josh")
+}
 
 
+//2. variable and anonymous function; anonymous function -we can call the funtion without name of the funtion , we can call through variables
+
+//example
+
+let talk = function(){             // give the name of variable not the function , so function automatically catch variable name that is known as anonyms function in that we can not give the name of function
+    console.log("hello barbi")
+}
+ talk()
+
+ // note - we can not  call the function before the function , terminal throws the error because of we can call the function before the function only in normal function
+
+// example
+// num()      // reference error; can not access num before intialization and in variable function
+// let num = function(){             // give the name of variable not the function , so function automatically catch variable name that is known as anonyms function in that we can not give the name of function
+//     console.log("hello kitty")
+// }
+
+//3. arrow function (variable function, anonyumus fun with diff syntax)
+
+// => equal to grater than the arrow sign
+
+let value = ()=>{                        //  i don't give the name of funtion and i have to use arrow  
+    console.log("hero")
+}
+value()
 
 
+//parameters function (with argument)
 
+// for understanding
+
+// funtion sum (a,b){        argument koh catch karta hai , and we can give any name to this parathesis like 12 woh a mei leta hai and 5 woh b mei consider krta hai so our answer will come 16
+//     console.log(a+b);
+// }
+// sum(12,5)- inside the parathesis we called argument - argument koh send krte hai
+
+
+//example 
+
+function sum (a,b){
+    console.log(12+5)
+}
+sum(12,5)
+
+
+function number10(c,d,f){
+    console.log(c+d+f)
+}
+number10(12,5,2)
+
+function sum10 (a,b,c){
+    console.log(a,b,c)
+    console.log(a+b+c)
+}
+let a=1;
+let b=2 ;
+let c=3;
+
+sum10(a,b,c)
+
+ 
+function sum12(y,z,x){         //3 1 2  15 5 2
+    console.log(x,y,z)         // 2 15 5
+}
+
+
+let x=1;
+let y=2 ;
+let z=3;
+sum12(x,y,z) //x-y y-z z-x   3,1,2   in place of y consider x  jya z che tya x ni value etle ke 3 consider thse
+sum12(15,5,2)    //15 -y z=5 ,x=2
+
+
+//return keyword - use only in function
+
+
+//take something , return nothing
+
+let num1 = 5;
+let num2 = 10;
+
+function kitty (a,b){
+    console.log(a+b)
+}
+kitty(num1,num2);
+
+
+// take something, return something  - to use return keyword
+
+let num3 = 2;
+let num4 = 4;
+
+
+function hanuman(a,b){
+    console.log("b")
+    return a+b;
+}
+hanuman(num3,num4)
 
 
 
