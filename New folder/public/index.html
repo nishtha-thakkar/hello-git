@@ -166,11 +166,18 @@ section {
 
 .hero{
   width: 100%;
+  background: linear-gradient(90deg,
+  rgb(240, 242, 246) 0%,   /* very light gray on the left */
+  rgb(220, 226, 234) 40%,  /* soft gray-blue in middle */
+  rgb(206, 215, 219) 100%  /* slightly deeper gray-blue on right */
+);
   /* margin-top: 2rem; */
   /* background-color: rgba(211, 211, 211, 0); */
   /* background: linear-gradient(to right, #f7f8fc 0%, #f7f8fc 50%, #ffffff 50%, #ffffff 100%); */
-  background: linear-gradient(to right, #f5f7fa 0%, #f5f7fa 50%, #ffffff 50%, #ffffff 100%);
+  /* background: linear-gradient(to right, #f5f7fa 0%, #f5f7fa 50%, #ffffff 50%, #ffffff 100%); */
  /* padding: clamp(1rem, 5vw, 3rem);*/
+  /* display: flex; */
+  /* background-color: lightgrey; */
   /* display: flex; */
 
 }
@@ -179,12 +186,12 @@ section {
   flex-wrap: wrap;       /* responsive wrap */
   align-items: center;
   justify-content: space-between;
-  width: 100%;
+  /* width: 100%; */
   /* max-width: 1200px; */
   margin: 0 auto;
   gap: 2rem;
-  border: 1px solid blue;
-  /* flex: 1 1 700px */
+  /* border: 1px solid blue; */
+  /* flex: 1  */
   /* padding: clamp(1rem, 5vw, 3rem) */
   
   
@@ -192,7 +199,9 @@ section {
 .hero-text{
   /* flex: 1 1 400px; shrink and grow properly */
   /* min-width: 280px; prevent too small */
-   padding: clamp(1rem, 5vw, 3rem) 
+   padding: clamp(1rem, 5vw, 3rem) ;
+   flex: 1;
+   width: 100%;
   
 }
 .hero-text h2{
@@ -203,19 +212,21 @@ section {
   -webkit-text-fill-color: transparent; /* Transparent text to show bg */
   background-clip: text;           /* Standard */
   color: transparent;     /* fallback */
-  display: inline-block;
+  /* display: inline-block; */
 
 
 }
 .hero-text h1{
-   font-size: clamp(2rem, 5vw, 2.5rem);
+   font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 1rem
 }
 
 .hero-text p{
- font-size: clamp(0.9rem, 1.2vw, 1.1rem);
-  margin-bottom: 2rem ;
+ /* font-size: clamp(0.9rem, 1.2vw, 1rem);*/
+  margin-bottom: 2rem ; 
   line-height: 1.5;
+  /* max-width: 600px; */
+  font-size: 0.9rem;
 }
 .hero-buttons {
   display: flex;
@@ -253,16 +264,22 @@ section {
   color: #007bff;
 }
 .hero-image {
-  flex: 1 1 500px;
-   min-width: 280px;
+  /* flex: 1 1 500px; */
+   /* min-width: 280px; */
   position: relative;
   width: 100%;
+  flex: 1;
+  
 
 }
 .hero-image img{
   width: 100%;
   height: auto;
-  /* border-radius: 10px; */
+  /* background-color: lightslategray; */
+  border:transparent;
+  border-radius: 10px;
+  /* overflow: hidden; */
+  /*      object-fit: cover; */
   /* flex: 1; */
   /* max-width: 500px; */
   /* background-color: transparent; */
@@ -378,7 +395,7 @@ section {
 .about-img-text-div{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 20px; 
+  gap: 3rem; 
    margin-top: 2rem;
 }
 
@@ -394,9 +411,14 @@ section {
 .about-text-div h4{
   margin-bottom: 0.5rem;
   font-size: 18px;
+   background: linear-gradient(135deg, #1ba3ff, #2cfcff);
+  -webkit-background-clip: text;   /* Safari & Chrome */
+  -webkit-text-fill-color: transparent; /* Transparent text to show bg */
+  background-clip: text;           /* Standard */
+  color: transparent; 
 }
 .about-text-div h2{
-  font-size: 44px;
+  font-size: 35px;
   margin-bottom: 0.5rem;
 }
 .about-text-div p{
@@ -481,7 +503,12 @@ section {
     text-align: center;
   }
   .service-text-div h2{
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+     background: linear-gradient(135deg, #1ba3ff, #2cfcff);
+  -webkit-background-clip: text;   /* Safari & Chrome */
+  -webkit-text-fill-color: transparent; /* Transparent text to show bg */
+  background-clip: text;           /* Standard */
+  color: transparent; 
 
   }
   .service-text-div p{
@@ -1746,10 +1773,11 @@ transform: translateY(-8px) scale(1.02); /* halka upar ane thodo motu */
   display: flex;
   /* justify-content: space-between; */
   gap: 1rem;
+  /* flex-wrap: wrap; */
 }
 .footer-div-1{
   width: 25%;
-  border: 1px solid black;
+  /* border: 1px solid black; */
 }
 /* .footer-div-1 .logo{
   height: auto;
@@ -1760,7 +1788,8 @@ transform: translateY(-8px) scale(1.02); /* halka upar ane thodo motu */
 .footer-div-1 p {
   margin-top: 1rem;
   color: white;
-} .fac-ins-lin-div{
+} 
+.fac-ins-lin-div{
   display: flex;
   margin-top: 1rem;
   gap: 1rem; 
@@ -1798,6 +1827,17 @@ transform: translateY(-8px) scale(1.02); /* halka upar ane thodo motu */
 }
 .phone-no-div{
   color: white;
+}
+.line-footer{
+  height: 1px;
+  width: 100%;
+  border: 1px solid grey;
+  margin-top: 1rem;
+  
+}
+.footer-div p {
+  text-align: center;
+   padding: 1rem 0;
 }
 
 /* @media (max-width: 1024px) {
@@ -1837,7 +1877,73 @@ transform: translateY(-8px) scale(1.02); /* halka upar ane thodo motu */
   /* .fac-ins-lin-div {
     justify-content: flex-start;
   }
-} */ 
+} */
+
+
+@media (max-width: 1024px) {
+  .footer-div-1,
+  .footer-2-div,
+  .footer-div-3,
+  .footer-div-4 {
+    width: 48%;   /* 2 in a row with gap */
+  }
+  .main-div-footer {
+    gap: 1.5rem;  /* extra breathing space */
+  }
+}
+
+/* Mobile (<= 768px) = 1 column */
+@media (max-width: 768px) {
+  .footer-div-1,
+  .footer-2-div,
+  .footer-div-3 {
+    width: 100%;  
+    align-items: center; 
+    padding: auto;
+    text-align: center;
+    /* full width */
+  
+  }
+  .footer{
+    text-align: center;
+    align-items: center;
+  } 
+  .main-div-footer{
+    /* text-align: center; */
+    width: 100%;  
+    align-items: center;
+    justify-content: center;
+    /* font-size: 16px; */
+    /* border: 1px solid blue; */
+  }  
+  .footer-icone-text-div{
+    text-align: center;
+    width: 100%;  
+    align-items: center; 
+    padding: auto;
+    justify-content: center;
+    /* border: 1px solid blue; */
+  } 
+  .main-div-footer {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+  }
+  .footer-2-div p{
+    padding: 0;
+  }
+  .fac-ins-lin-div{
+    text-align: center;
+    width: 100%;  
+    align-items: center; 
+    padding: auto;
+    justify-content: center;
+
+
+  }
+  
+}
+
    </style>
 
 
@@ -1878,9 +1984,9 @@ transform: translateY(-8px) scale(1.02); /* halka upar ane thodo motu */
   <div class="hero-content">
     <div class="hero-text">
       <h2>AxionX Digital</h2>
-      <h1>Engineering Excellence <br> for AI & Open Source</h1>
+      <h1>Engineering Excellence <span style="display: block;">for AI & Open Source</span></h1>
       <p>
-        We build LLM evaluation datasets, validate complex repositories, and ship production-<br>
+        We build LLM evaluation datasets, validate complex repositories, and ship production-
         grade tooling. Rust · Java · JavaScript · Python · Go · Docker · CI/CD.
       </p>
       <div class="hero-buttons">
@@ -2455,10 +2561,10 @@ transform: translateY(-8px) scale(1.02); /* halka upar ane thodo motu */
 
     </div>
     <div class="footer-2-div">
-      <p style="color: white; font-weight: bold; padding: 0px 4rem; ">Quick Link</p>
-      <p style="color: whitesmoke; margin-top: 1rem; padding: 0px 4rem;"><u>Home</u></p>
-      <p style="color: white; margin-top: 1rem; padding: 0px 4rem;">About us</p>
-      <p style="color: white;margin-top: 1rem; padding: 0px 4rem;">Contact us</p>
+      <p style="color: white; font-weight: bold; text-align: center; ">Quick Link</p>
+      <p style="color: whitesmoke; margin-top: 1rem; text-align: center;"><u>Home</u></p>
+      <p style="color: white; margin-top: 1rem; text-align: center; ">About us</p>
+      <p style="color: white;margin-top: 1rem; text-align: center;">Contact us</p>
      
 
 
@@ -2512,6 +2618,15 @@ transform: translateY(-8px) scale(1.02); /* halka upar ane thodo motu */
       
 
     </div>
+
+  </div>
+
+  <div class="line-footer">
+
+  </div>
+
+  <div class="footer-div">
+    <p style="color: white;">© 2025 AxionX Digital PVT LTD. All rights reserveds.</p>
 
   </div>
 
