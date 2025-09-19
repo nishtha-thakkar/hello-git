@@ -372,15 +372,38 @@ kitty(num1,num2);
 
 // take something, return something  - to use return keyword
 
-let num3 = 2;
-let num4 = 4;
+// let num3 = 2;
+// let num4 = 4;
 
 
-function hanuman(a,b){
-    console.log("b")
-    return a+b;
-}
-hanuman(num3,num4)
+// function hanuman(a,b){
+//     // console.log("b")
+//     return a+b;
+// }
+// // hanuman(num3,num4)
+
+
+//return -  yahi se mera code return hoga
+
+// function result2({
+//     if(num5%2 ==0){
+//         return"even"
+//     }else {
+//         return"off"
+//     }
+
+
+// }
+// for(let f=1, f<=10,f++){
+//     console.log(result2(f))
+// }
+
+
+
+
+
+
+
 
 
 
