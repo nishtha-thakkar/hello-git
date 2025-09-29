@@ -80,9 +80,9 @@
           /* width:900px ; */
         }
         .button {
-          width: 100%; 
+          width: 100%;
           flex-direction: column;
-          align-items: flex-end; 
+          align-items: flex-end;
         }
 
         /* .button button {
@@ -136,15 +136,15 @@
         word-wrap: break-word;
         font-size: 18px;
       }
-      .para-1 .btn-group{
+      .para-1 .btn-group {
         display: flex;
-       align-items: center;
-       margin-top: 2rem;
+        align-items: center;
+        margin-top: 2rem;
       }
 
-    .para-1 .btn-group button {
-       margin-right: 15px;   /* spacing between buttons*/
-}
+      .para-1 .btn-group button {
+        margin-right: 15px; /* spacing between buttons*/
+      }
 
       .para-1 .button-2 {
         padding: 10px 10px;
@@ -168,8 +168,6 @@
         /* display: flex; */
         /* align-items: center; */
         background-color: lightgray;
-
-
       }
 
       /* .gradient{
@@ -212,10 +210,10 @@
         -bottom: 3rem;margin */
       }
 
-      .rating{
+      .rating {
         position: absolute;
-       bottom: 6rem;
-       right: 29rem;
+        bottom: 6rem;
+        right: 29rem;
       }
 
       @media (max-width: 1200px) {
@@ -233,9 +231,8 @@
           width: 100%;
           /* display: inline-block; */
         }
-        .img-robot{
+        .img-robot {
           width: 100%;
-          
         }
         .para-1 h1 {
           flex-direction: column;
@@ -261,39 +258,35 @@
           /* width: 50%; */
           justify-content: center;
         }
-        
-          .experience{
-            flex-direction: row;
-            align-items: flex-end;
-            justify-content: end;
-            /* width: 100%; */
-          }
 
-          .rating{
-            flex-direction: row;
-            align-items: flex-start;
-            /* width: 100%; */
-            right: 3rem;
-          }
-        
+        .experience {
+          flex-direction: row;
+          align-items: flex-end;
+          justify-content: end;
+          /* width: 100%; */
+        }
+
+        .rating {
+          flex-direction: row;
+          align-items: flex-start;
+          /* width: 100%; */
+          right: 3rem;
+        }
       }
 
-      .about-us-div{
-       margin-top: 2rem;
-       padding: 0 40px;
-      
+      .about-us-div {
+        margin-top: 2rem;
+        padding: 0 40px;
       }
 
-      .main-div-about-us{
+      .main-div-about-us {
         /* border: 1px solid green; */
         display: grid;
         grid-template-columns: 1fr 1fr;
         right: 2rem;
         /* align-items: center; */
-
-
       }
-      .img-collegues-div img{
+      .img-collegues-div img {
         width: 100%;
         /* border-radius: 10px; */
         max-width: 600px;
@@ -304,9 +297,8 @@
         /* margin: 0;
         padding: 0;
          */
-         margin: 0;
-         padding: 0;
-
+        margin: 0;
+        padding: 0;
       }
       .about-us-text-div {
         max-width: 900px;
@@ -315,105 +307,116 @@
         /* overflow: hidden; */
       }
 
-      .about-us-text-div h2{
+      .about-us-para-1 {
         /* color:linear-gradient(90deg, #3ba9ff, #6a5bff);  */
         margin-top: 2rem;
         /* margin-right: 3rem; */
         /* border: 1px solid black; */
         /* overflow: hidden; */
-        font-size: 30px;
+        /* font-size: 30px; */
+        font-family: Jost;
+        font-weight: 700;
+        font-style: Bold;
+        font-size: 42px;
+        leading-trim: NONE;
+        line-height: 120%;
+        letter-spacing: -2%;
+      }
+      .about-us-text-div h1 {
+        max-width: 600px;
+        /* border: 2px solid blue; */
+        font-size: 40px;
+        line-height: 1.3;
+        margin-top: 1rem;
+      }
+      .about-us-text-div p {
+        /* border: 1px solid yellowgreen; */
+        margin-top: 2rem;
+        font-size: 18px;
+        max-width: 680px;
+        font-weight: 800px;
+      }
 
+      .about-us-text-div h3 {
+        margin-top: 2rem;
+      }
+
+      .about-us-text-div ul {
+        margin-top: 10px;
+        padding-left: 20px;
+      }
+
+      .about-us-text-div ul li {
+        line-height: 1.9;
+      }
+
+      /* responsive */
+
+      @media (max-width: 1024px) {
+        .main-div-about-us {
+          grid-template-columns: 1fr; /* 2 column → 1 column */
+          text-align: center;
+        }
+        .img-collegues-div img {
+          max-width: 80%; /*full width*/
+          height: auto;
+        }
+
+        .about-us-text-div {
+          margin: 0 auto;
+          max-width: 90%; /* content thodu shrink */
+        }
+
+        .about-us-text-div h1 {
+          font-size: 32px; /* font thodu nano */
+          /* justify-content: center; */
+        }
+         .about-us-text-div h6{
+          justify-content: center;
+          width: 100%;
+          text-align: center;
+         }
+
+        .about-us-text-div p {
+          font-size: 16px;
+          /* text-align: center; */
+        }
+      }
+      /* @media (max-width: 992px){
+         .about-us-text-div h6{
+          text-align: center;
+        } */
+
+      
+      @media (max-width: 768px) {
+        .main-div-about-us {
+          grid-template-columns: 1fr; /*sirf ek column*/
+          text-align: center;
+        }
+
+        .img-collegues-div img {
+          max-width: 100%; /*full width*/
+          height: auto;
+        }
+
+        .about-us-text-div {
+          max-width: 100%;
+          padding: 0 10px; /*side space */
+        }
+
+        .about-us-text-div h1 {
+          font-size: 24px; /* aur nano */
+          line-height: 1.4;
+        }
+        .about-us-text-div h6{
+          justify-content: center;
+        }
+
+        .about-us-text-div p {
+          font-size: 14px;
+        }
 
       }
-            .about-us-text-div h1{
-              max-width: 600px;
-              /* border: 2px solid blue; */
-              font-size: 40px;
-              line-height: 1.3;
-              margin-top: 1rem;
-            }
-            .about-us-text-div p{
-              /* border: 1px solid yellowgreen; */
-              margin-top: 2rem;
-              font-size: 18px;
-              max-width: 680px ;
-              font-weight: 800px;
-
-            }
-
-            .about-us-text-div h3{
-              margin-top: 2rem;
-            }
-
-            .about-us-text-div ul{
-              margin-top: 10px;
-              padding-left: 20px;
-            }
-
-            .about-us-text-div ul li{
-              line-height: 1.9;
-            }
-
-          /* responsive */
-        
-        
-          @media (max-width: 1024px) {
-
-         
-         
-  .main-div-about-us {
-    grid-template-columns: 1fr; /* 2 column → 1 column */
-    text-align: center;
-     
-  }
-   .img-collegues-div img {
-    max-width: 80%; /*full width*/
-    height: auto;
-   
-   
-  }
-
-  .about-us-text-div {
-    margin: 0 auto;
-    max-width: 90%; /* content thodu shrink */
-  }
-
-  .about-us-text-div h1 {
-    font-size: 32px; /* font thodu nano */
-    /* justify-content: center; */
-  }
-
-  .about-us-text-div p {
-    font-size: 16px;
-    /* text-align: center; */
-  }
-}
-@media (max-width: 768px) {
-  .main-div-about-us {
-    grid-template-columns: 1fr; /*sirf ek column*/
-    text-align: center;
-  }
-
-  .img-collegues-div img {
-    max-width: 100%; /*full width*/
-    height: auto;
-  }
-
-  .about-us-text-div {
-    max-width: 100%;
-     padding: 0 10px; /*side space */
-  }
-
-  .about-us-text-div h1 {
-    font-size: 24px; /* aur nano */
-    line-height: 1.4;
-  }
-
-  .about-us-text-div p {
-    font-size: 14px;
-  }
-}
-          
     </style>
   </head>
   <body>
@@ -452,57 +455,62 @@
             . Go . Docker . CI / CD
           </p>
           <div class="btn-group">
-          <button class="button-2">
-            Talk to us <img src="./images/arrow-right.png" alt="" />
-          </button>
-          <button class="button-3">
-            Our service
-            <img style="color: black" src="./images/arrow left.png" alt="" />
-          </button>
+            <button class="button-2">
+              Talk to us <img src="./images/arrow-right.png" alt="" />
+            </button>
+            <button class="button-3">
+              Our service
+              <img style="color: black" src="./images/arrow left.png" alt="" />
+            </button>
           </div>
-
         </div>
 
         <div class="experience">
           <img src="./images/Group.png" alt="" />
           <p>
-           <span> 20 +</span><br>
-            years of exp 
+            <span> 20 +</span><br />
+            years of exp
           </p>
         </div>
 
         <div class="rating">
-
-          <img src="./images/Group 1621.png" alt="">
-
+          <img src="./images/Group 1621.png" alt="" />
         </div>
       </div>
     </section>
 
-    <section  class="about-us-div">
+    <section class="about-us-div">
       <div class="main-div-about-us">
         <div class="img-collegues-div">
-          <img src="./images/Rectangle 45 (1).png" alt="">
-
+          <img src="./images/Rectangle 45 (1).png" alt="" />
         </div>
 
         <div class="about-us-text-div">
           <h2>About us</h2>
           <h1>Lorem Ipsum is simply dummy text of the printing.</h1>
-          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting
+            industry. Lorem Ipsum has been the industry's standard dummy text
+            ever since the 1500s, when an unknown printer took a galley of type
+            and scrambled it to make a type specimen book.
+          </p>
 
           <h3>Why teams choose AxionX</h3>
           <ul>
-        <li>Battle-tested OSS expertise</li>
-        <li>Reproducible, Dockerized environments for evaluation at scale</li>
-        <li>Production-readiness mindset: security, performance, maintainability</li>
-        <li>Flexible engagement: pods, staff augmentation, or turnkey delivery</li>
+            <li>Battle-tested OSS expertise</li>
+            <li>
+              Reproducible, Dockerized environments for evaluation at scale
+            </li>
+            <li>
+              Production-readiness mindset: security, performance,
+              maintainability
+            </li>
+            <li>
+              Flexible engagement: pods, staff augmentation, or turnkey delivery
+            </li>
           </ul>
-
         </div>
-
       </div>
-
     </section>
   </body>
 </html>

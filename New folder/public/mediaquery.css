@@ -1,0 +1,76 @@
+@media (max-width: 1023px) {
+  .nav-links {
+    gap: 8px; /* thoda spacing ochha */
+  }
+
+  .button-0 {
+    /* padding: 8px 16px; */
+    height: 40px;
+    width: 166px;
+    font-size: 14px;
+  }
+
+  .logo img {
+    height: clamp(28px, 5vw, 45px);
+  }
+
+
+}
+
+
+
+@media (max-width: 767px) {
+  /* Hide links initially */
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background: white;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    gap: 6px;
+  }
+
+  /* Show links when navbar has .active */
+  .navbar.active .nav-links {
+    display: flex;
+  }
+
+  /* Show hamburger icon */
+  .menu-icon {
+    display: block;
+  }
+
+  /* Adjust nav items */
+  .nav-links a,
+  .nav-select {
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+    text-align: left;
+  }
+
+  /* Button smaller */
+  .button-0{
+    height: 40px;
+    width: 155px;
+  }
+
+  /* Logo smaller */
+  .logo img {
+    height: 35px;
+  }
+}
+
+ /* @media (max-width:1024px){
+  .hero{
+    height: auto;
+    width: 100%;
+  }
+  .box-hero-contant h6{
+    left: 0px;
+  }
+}  */
