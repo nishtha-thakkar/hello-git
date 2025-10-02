@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <p id="text"></p>
+    <button id="#btn">click me</button>
+
+    <script>
+        let text = document.querySelector("#text")
+        let btn = document.querySelector("#btn") -->
+
+        <!-- // first argument event trigger name, second argument for callback function
+
+    //     btn.addEventListener("click",() => {
+    //         console.log("hello");
+    //         text.innerText="event listener";
+    //          }) -->
+
+       
+    <!-- // </script> -->
+
+
+    <h1 id="text"></h1>
+    <button id="btn"></button>
+    <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+
+
+    <script>
+        let text = document.querySelector("#text")
+        let btn = document.querySelector("#btn")
+        let list = document.querySelectorAll("#li")
+        console.log(text)
+
+        text.innerHTML = " <i> batman  </i>"  // help to write tags in js
+        btn.innerHTML = "get started" 
+        // li.innerHTML =  ["one" ,"two","three","four"]
+
+
+        btn.addEventListener("click", ()=>{
+
+            text.style.color = "red"
+            btn.style.color = "green"
+        }
+    )
+
+    let nameoflist = ["one" ,"two","three","four"]
+
+    // for(let i = 0 ; i<nameoflist.length,i++){
+    //     console.log(nameoflist[i].innerHTML)
+    // }
+    </script>
+
+
+    
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!-- DOM - html - to use of index html (document object format)  nodes -to connect document -->
+
+<!-- DOM stands for the Document Object Model, which is a programming interface
+      that represents an HTML or XML document as a tree of nodes or objects. It
+      allows scripting languages, most commonly JavaScript, to dynamically
+      access and manipulate the structure, style, and content of a web page
+      after it has loaded in the browser -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <p id="text"></p>
+
+    <script>
+        // let text = document.getElementById("text")
+        // text.innerHtml = "gaming"
+        // conaole.log(text)
+
+
+
+    </script>
+
+    <!-- queryselector and queryselectorAll
+     queryselector- get single 
+     queryselectorAll- get in array data -->
+<!-- 
+     in place of id we can use 
+      queryselector-
+     queryselectorAll -->
+
+     <p id="text2"></p>
+     <!-- <p id="text2"></p> -->
+
+     <script>
+        let heading = document.querySelector("#text2")
+        heading.innerHTML= "gaming"
+
+
+
+     </script>
+
+     <p class="word"></p>
+
+     <h2></h2>
+     <h2></h2>
+     <h2></h2>
+     <h2></h2>
+
+     <script>
+        let mainHeading = document.querySelectorAll("h2");   //return array
+        console.log(mainHeading)
+
+        for(let i =0; i < mainHeading.length;i++){
+            mainHeading[i].innerHTML = i+1
+        }
+     </script>
+
+     
+
+
+    
+</body>
+</html>

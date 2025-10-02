@@ -389,7 +389,7 @@ kitty(num1,num2);
 //     if(num5%2 ==0){
 //         return"even"
 //     }else {
-//         return"off"
+//         return"odd"
 //     }
 
 
