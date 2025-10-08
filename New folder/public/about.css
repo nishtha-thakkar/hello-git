@@ -105,7 +105,8 @@ letter-spacing: 0%;
 
 }
 .button-0:hover{
-   background: linear-gradient(135deg, #0a4a59, #1ba3ff, #2cfcff);
+  background: linear-gradient(135deg,rgba(157, 95, 225, 1), rgba(53, 156, 245, 1),rgba(11, 212, 230, 1));
+  
 
 
 }
@@ -143,6 +144,8 @@ gap: 16px;
 } 
 .box-hero-contant:hover{
     border: 3px solid blue;
+    /* left: 310px; */
+
 }
 .box-hero-contant h6{
     position: absolute;
@@ -165,12 +168,12 @@ color: rgba(255, 255, 255, 1);
 }
 .box-hero-contant p {
     position: absolute;
-    top: 72px;
-    left: 55px;
+    top: 80px;
+    left: 52px;
     font-family: Jost;
 font-weight: 400;
 font-style: Regular;
-font-size: 16px;
+font-size: 15px;
 /* leading-trim: NONE; */
 line-height: 150%;
 letter-spacing: 0%;
@@ -197,12 +200,12 @@ color: rgba(255, 255, 255, 1);
   
 }
 .about-img-div img{
-  height: 495px; 
-   width: 595px;
+  height: 440px; 
+   width: 580px;
 }
 .para-1-about-us{
   margin-top: 4rem;
-  background: linear-gradient(135deg,rgba(157, 95, 225, 1),rgba(53, 156, 245, 1),rgba(11, 212, 230, 1));
+  background: linear-gradient(rgba(157, 95, 225, 1), rgba(53, 156, 245, 1),rgba(11, 212, 230, 1));
     -webkit-background-clip: text;   /* Safari & Chrome */
   -webkit-text-fill-color: transparent; /* Transparent text to show bg */
   background-clip: text;           /* Standard */
@@ -225,13 +228,20 @@ font-weight: 700;
 font-style: Bold;
 /* font-size: 45px; */
 /* leading-trim: NONE; */
-line-height: 120%;
+/* line-height: 120%;
 letter-spacing: -2%;
 margin-top: 0.3rem;
 margin-bottom: 1rem;
 font-size: 32px;
-color: rgba(10, 17, 49, 1);
+color: rgba(10, 17, 49, 1);  */
 /* word-spacing: 0.20rem */
+/* font-family: 'Jost', sans-serif; */
+      font-weight: 700;
+      font-size: 35px;
+      line-height: 120%;
+      letter-spacing: -2%;
+      margin: 0 0 20px 0;
+      color: #0a0a0a;
 
 
  }
@@ -242,7 +252,7 @@ color: rgba(10, 17, 49, 1);
   font-family: Jost;
 font-weight: 400;
 font-style: Regular;
-font-size: 12.5px;
+font-size: 14px;
 /* leading-trim: NONE; */
 line-height: 150%;
 letter-spacing: 0%;
@@ -251,11 +261,40 @@ letter-spacing: 0%;
 width:500px ; */
 /* width: 625px; */
 color: rgba(10, 17, 49, 1);
+margin-bottom: 12px;
 /* max-width: 500px; */
 
  }
  /* .para-3-about-us span{
   display: block;
  } */
+
+ .para-4-about-us{
+  font-family: Jost;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+/* leading-trim: NONE; */
+line-height: 150%;
+letter-spacing: 0%;
+color: rgba(10, 17, 49, 1);
+margin-bottom: 12px;
+
+}
+
+
+.para-5-about-us{
+  font-family: Jost;
+font-weight: 400;
+font-style: Regular;
+font-size: 14px;
+/* leading-trim: NONE; */
+line-height: 150%;
+letter-spacing: 0%;
+color: rgba(10, 17, 49, 1);
+
+}
+
+  
 
   
