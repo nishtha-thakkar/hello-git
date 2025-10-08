@@ -15,3 +15,18 @@ console.log(selfDetail.institute)
 selfDetail.courseduration = "1year"
 
 console.log(selfDetail) // create from outside 
+
+
+let game = {
+   gameName : ["pubjii" , "candycrush" , "puzzle"],
+   gameusername : "dhruv",
+
+}
+
+console.log(game.gameName)
+console.log(game.gameusername)
+
+console.log(game)
+
+game.skill = "best"
+console.log(game)
