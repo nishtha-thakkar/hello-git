@@ -30,3 +30,48 @@ console.log(game)
 
 game.skill = "best"
 console.log(game)
+
+
+let student = {
+   studentName:"nishtha",
+   class:"12th",
+   show:function(){
+      console.log("hello")
+   },
+
+}
+console.log(student)
+// console.log(student.show)
+student.show()
+
+//function
+
+function validation(email , password){
+   if(email==="cdet"){
+      if(password === 2345){
+         console.log("login")
+      }else{
+         console.log("password is incorrect")
+      }
+   }else{
+      console.log("email invalid")
+   }
+
+}
+
+validation("cdet" , 2345)
+// validation("nishtha" , 4567)
+
+
+//object
+
+let student2 = {
+   studentName : "pooja",
+   std:"12",
+   valid:function(cat){
+      console.log(`kitty ${cat}`)
+   }
+}
+student2.valid("is very cute")
+
+
