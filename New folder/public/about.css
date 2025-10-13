@@ -277,13 +277,16 @@ section {
   /* padding:  clamp(15px, 5vw, 60px); */
   /* padding: 0px 8px; */
   /* margin-top: 3rem; */
-  height: 90vh;
+  height: 80vh;
    /* background: linear-gradient(180deg, #e8f0ff 0%, #ffffff 100%);  */
   /* background: linear-gradient(40.6deg, rgba(157, 95, 225, 0.1) -9.38%, rgba(53, 156, 245, 0.1) 50.36%, rgba(11, 212, 230, 0.1) 110.1%); */
   background: linear-gradient(40.6deg, rgba(157, 95, 225, 0.1) -9.38%, rgba(53, 156, 245, 0.1) 50.36%, rgba(11, 212, 230, 0.1) 110.1%);
 
 
   
+}
+.main-principle-div:hover{
+  border: 2px solid blue;
 }
 
 .principle-para-1 {
@@ -307,7 +310,7 @@ section {
   /* margin-top: 3rem; */
   /* padding:  clamp(15px, 5vw, 90px); */
   /* padding: 7rem 0px; */
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
 .principle-para-2 {
   font-family: "Jost";
@@ -330,14 +333,18 @@ section {
   display: flex;
   /* justify-content: space-between; */
   gap: 1rem;
+  /* flex-wrap: wrap; */
 }
 .principle-card-1 {
   width: 298px;
-  height: 190px;
+  /* height: 190px; */
   border: 1px solid black;
   padding-top: 1rem;
   padding-left: 1rem;
   background-color: rgba(10, 17, 49, 1);
+}
+.principle-card-1:hover{
+  border: 3px solid blue;
 }
 
 /* .principle-card-1 img{
@@ -355,7 +362,7 @@ section {
   font-weight: 600;
   font-style: "SemiBold";
   font-size: 24px;
-  leading-trim: "NONE";
+  /* leading-trim: "NONE"; */
   line-height: 120%;
   letter-spacing: -2%;
   color: rgba(255, 255, 255, 1);
@@ -363,29 +370,33 @@ section {
 .principle-card-1-para-2 {
   font-family: "Jost";
   font-weight: 400;
-  font-style: "Regular";
+  /* font-style: "Regular"; */
   font-size: 16px;
-  leading-trim: NONE;
+  /* leading-trim: NONE; */
   line-height: 150%;
   letter-spacing: 0%;
   padding-top: 0.5rem;
   color: rgba(255, 255, 255, 1);
+  padding-bottom: 1rem;
 }
 .principle-card-2 {
   width: 298px;
-  height: 190px;
+  /* height: 190px; */
   border: 1px solid black;
   padding-top: 1rem;
   padding-left: 1rem;
   background-color: rgba(255, 255, 255, 1);
 }
+.principle-card-2:hover{
+  border: 3px solid blue;
+}
 .principle-card-2-para {
   padding-top: 1rem;
   font-family: "Jost";
   font-weight: 600;
-  font-style: "SemiBold";
+  /* font-style: "SemiBold"; */
   font-size: 24px;
-  leading-trim: "NONE";
+  /* leading-trim: "NONE"; */
   line-height: 120%;
   letter-spacing: -2%;
   /* color: rgba(255, 255, 255, 1); */
@@ -394,21 +405,25 @@ section {
 .principle-card-2-para-2 {
   font-family: "Jost ";
   font-weight: 400;
-  font-style: "Regular";
+  /* font-style: "Regular"; */
   font-size: 16px;
-  leading-trim: NONE;
+  /* leading-trim: NONE; */
   line-height: 150%;
   letter-spacing: 0%;
   padding-top: 0.5rem;
   color: rgba(10, 17, 49, 1);
+  padding-bottom: 1rem;
 }
 .principle-card-3 {
   width: 298px;
-  height: 190px;
+  /* height: 190px; */
   border: 1px solid black;
   padding-top: 1rem;
   padding-left: 1rem;
   background-color: rgba(255, 255, 255, 1);
+}
+.principle-card-3:hover{
+  border: 3px solid blue;
 }
 .principle-card-3-para{
    padding-top: 1rem;
@@ -425,28 +440,32 @@ section {
 .principle-card-3-para-2{
   font-family: "Jost";
   font-weight: 400;
-  font-style: "Regular";
+  /* font-style: "Regular"; */
   font-size: 16px;
   /* leading-trim: NONE; */
   line-height: 150%;
   letter-spacing: 0%;
   padding-top: 0.5rem;
   color: rgba(10, 17, 49, 1);
+  padding-bottom: 1rem;
 
 }
 .principle-card-4 {
   width: 298px;
-  height: 190px;
+  /* height: 190px; */
   border: 1px solid black;
   padding-top: 1rem;
   padding-left: 1rem;
   background-color: rgba(255, 255, 255, 1);
 }
+.principle-card-4:hover{
+  border: 3px solid blue;
+}
 .principle-card-4-para{
   padding-top: 1rem;
   font-family: "Jost";
   font-weight: 600;
-  font-style: "SemiBold";
+  /* font-style: "SemiBold"; */
   font-size: 24px;
   /* leading-trim: "NONE"; */
   line-height: 120%;
@@ -457,12 +476,105 @@ section {
 .principle-card-4-para-2{
   font-family: "Jost" ;
   font-weight: 400;
-  font-style: "Regular";
+  /* font-style: "Regular"; */
   font-size: 16px;
   /* leading-trim: NONE; */
   line-height: 150%;
   letter-spacing: 0%;
   padding-top: 0.5rem;
   color: rgba(10, 17, 49, 1);
+  padding-bottom: 1rem;
 
 }
+.ways-of-working-section{
+  border: 2px solid black;
+  padding: clamp(10px, 2vw, 20px) clamp(15px, 5vw, 60px);
+  /* flex: 1; */
+  background-color: rgba(10, 17, 49, 1);
+}
+.working-text-img-div{
+  flex: 1;
+}
+.working-text-div{
+  flex: 0.5;
+}
+.main-heading-working{
+/* background: linear-gradient(40.6deg, #9D5FE1 -9.38%, #359CF5 50.36%, #0BD4E6 110.1%); */
+background: linear-gradient(
+    rgba(157, 95, 225, 1),
+    rgba(53, 156, 245, 1),
+    rgba(11, 212, 230, 1)
+  );
+
+  -webkit-background-clip: text; /* Safari & Chrome */
+  -webkit-text-fill-color: transparent; /* Transparent text to show bg */
+  background-clip: text; /* Standard */
+  color: transparent;
+  font-family: "Jost";
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 14px;
+  /* leading-trim: NONE; */
+  line-height: 100%;
+  letter-spacing: 0%;
+  padding-top: 3rem;
+
+
+}
+.axion-approach-text{
+  font-family: "Jost",sans-serif;
+font-weight: 700;
+font-style: Bold;
+font-size: 35px;
+/* leading-trim: NONE; */
+line-height: 120%;
+letter-spacing: -2%;
+  color: rgba(255, 255, 255, 1);
+  margin-top: 0.5rem;
+
+}
+.p-01{
+  font-family: "Jost" , sans-serif;
+font-weight: 400;
+/* font-style: Regular; */
+font-size: 32px;
+/* leading-trim: NONE; */
+line-height: 150%;
+letter-spacing: 0%;
+color: rgba(255, 255, 255, 1);
+/* padding-top: 0.5rem; */
+/* margin-top: 1rem; */
+
+}
+.div-text-01{
+  display: flex;
+  gap: 0.5rem;
+  padding-top: 0.9rem;
+}
+.collabration{
+  font-family: "Jost";
+font-weight: 500;
+/* font-style: Medium; */
+font-size: 16px;
+/* leading-trim: NONE; */
+line-height: 150%;
+letter-spacing: 0%;
+color: rgba(255, 255, 255, 1);
+
+}
+.text-01{
+font-family: "Jost" ;
+/* font-weight: 100; */
+/* font-style: Regular; */
+font-size: 14px;
+/* leading-trim: NONE; */
+line-height: 150%;
+letter-spacing: 0%;
+color: rgba(255, 255, 255, 1);
+/* font-weight: lighter; */
+/* font-weight: normal; */
+
+}
+
+
+
