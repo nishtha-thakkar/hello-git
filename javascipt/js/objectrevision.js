@@ -44,22 +44,7 @@ console.log(student)
 // console.log(student.show)
 student.show()
 
-//function
 
-function validation(email , password){
-   if(email==="cdet"){
-      if(password === 2345){
-         console.log("login")
-      }else{
-         console.log("password is incorrect")
-      }
-   }else{
-      console.log("email invalid")
-   }
-
-}
-
-validation("cdet" , 2345)
 // validation("nishtha" , 4567)
 
 

@@ -167,3 +167,86 @@ show("1" , "2")
 show(8 , "10")
 
 show(8, 2 , )
+
+
+// loop while and do while
+
+// while and for loop - entry loop
+// do-while- exit loop
+
+//while
+
+//initialize
+// condition
+//execute
+//inc-dec
+
+let a = 1
+
+while(a<=5){       // 1<=5 , 2<=5 , 3<=5 , 4<=5,5<=5 ,6<=5-false
+    console.log(a)  //1,2 ,3 ,4 ,5
+    a++               //2 //3 //4 //5 //6
+}
+console.log("break")
+
+
+let b = 1
+
+while(b<=5){     //1<=5 , 2<=5 , 3<=5 , 4<=5,5<=5 ,6<=5-false
+     b++       //2 //3 //4 //5 //6 
+    console.log(b)  //,2 ,3 ,4 ,5 ,6
+               
+}
+console.log("break")
+
+
+//do while - at least one time code will be execute
+
+//initialize
+//execute
+// inc-dec
+// condition
+
+
+let c = 1
+
+do{
+    console.log(c) //1 //2 //3 //4
+    c++ //2//3 //4 //5
+}while(c<=4) //2<=4 , 3<=4 ,4<=4,5<=5
+
+
+function validation(email , password){
+   if(email==="cdet"){
+      if(password === 2345){
+         console.log("login")
+      }else{
+         console.log("password is incorrect")
+      }
+   }else{
+      console.log("email invalid")
+   }
+
+}
+
+validation("cdet" , 2345)
+
+let array5 = ["nishtha" , "deep" , "yash"]
+
+for(i=0 ; i<array5.length ; i++){   0<3
+check(array5[i])      // nishtha
+}
+
+function check(username){  //nishtha
+    if(username === "yash"){    //nishtha ===yash
+        console.log(username)
+    }
+}      // passing array element in function
+
+
+
+
+
+
+
+
