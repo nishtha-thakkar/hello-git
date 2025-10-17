@@ -491,11 +491,19 @@ section {
   padding: clamp(10px, 2vw, 20px) clamp(15px, 5vw, 60px);
   /* flex: 1; */
   background-color: rgba(10, 17, 49, 1);
+  /* height: auto; */
+  height: 550px;
+}
+.ways-of-working-section:hover{
+  border: 2px solid blue;
 }
 .working-text-img-div{
   flex: 1;
+  display: flex;
+  /* justify-content: ; */
 }
-.working-text-div{
+.working-text-div,
+.working-img-div{
   flex: 0.5;
 }
 .main-heading-working{
@@ -517,7 +525,7 @@ background: linear-gradient(
   /* leading-trim: NONE; */
   line-height: 100%;
   letter-spacing: 0%;
-  padding-top: 3rem;
+  padding-top: 6rem;
 
 
 }
@@ -575,6 +583,350 @@ color: rgba(255, 255, 255, 1);
 /* font-weight: normal; */
 
 }
+.button-text-arrow-div{
+  display: flex;
+  height: 50px;
+  width: 130px;
+  /* border: 3px solid white; */
+  background-color: white;
+  margin-top: 1.5rem;
+  justify-content: center;
+  align-items: center;
+}
+.button-text-arrow-div:hover{
+  border: 2px solid blue;
+}
+.button-text{
+  font-family: "Jost";
+font-weight: 500;
+/* font-style: Medium; */
+font-size: 16px;
+/* leading-trim: NONE; */
+line-height: 100%;
+letter-spacing: 0%;
+text-align: left;
+/* color: rgba(255, 255, 255, 1); */
+
+}
+.button-arrow{
+  /* color: rgba(255, 255, 255, 1); */
+  width: 20px;
+  height: 20px;
+  
+}
+.working-img-div{
+  width: 595px;
+  height: 428px;
+  padding-top: 3rem;
+  position: relative;
+  /* z-index: 2; */
+}
+/* .working-img-div:hover{
+  border: 2px solid blue;
+} */
+.img-work img {
+  position: relative;
+  z-index: 2; /* ensures main image is on top */
+}
+.img-work img:hover{
+   border: 2px solid blue;
+
+}
+.box-3-img{
+  position: absolute;
+  left: -75px;
+  top: 390px;
+  /* z-index: -6000px; */
+  z-index: 1;
+  opacity: 0.8;
+}
+.box-3-2-img{
+   position: absolute;
+   /* align-items: end; */
+   top: -1px;
+   left: 520px;
+   /* z-index: 5000px; */
+   z-index: 1;   
+   opacity: 0.8;  /* 80% visible and 20%transparent */
+
+   /* background-color: #0a0a0a; */
+   /* color: #0a0a0a; */
+
+}
+
+/* Viewer
+│
+│   z-index: 2 → 🖼️ Main Image (in front)
+│   z-index: 1 → 🟦 Decorative Cubes (behind)
+│   z-index: 0 → 🔵 Section Background (bottom) */
+
+
+/* What is opacity?
+
+Opacity controls how transparent or visible an element is.
+
+It’s a CSS property that accepts values between 0 and 1:
+
+Value	Meaning	Example
+1	Fully visible	Normal image
+0.5	50% transparent	You can see background through it
+0	Fully invisible	It’s there, but not visible
+🧩 Syntax
+opacity: 0.8;
+
+
+This means the element is 80% visible and 20% transparent.
+ */
+
+ .our-expert-team-div{
+  /* border: 1px solid black; */
+  /* flex: 1; */
+  background: linear-gradient(40.6deg, rgba(157, 95, 225, 0.1) -9.38%, rgba(53, 156, 245, 0.1) 50.36%, rgba(11, 212, 230, 0.1) 110.1%);
+
+ }
+ .our-expert-team-div:hover{
+  border: 2px solid blue;
+ }
+ .para-1-expert-team{
+font-family: "Jost";
+font-weight: 500;
+/* font-style: Medium; */
+font-size: 14px;
+/* leading-trim: NONE; */
+line-height: 100%;
+letter-spacing: 0%;
+text-align: center;
+/* background: linear-gradient(
+    rgba(157, 95, 225, 1),
+    rgba(53, 156, 245, 1),
+    rgba(11, 212, 230, 1)
+  ); */
+  background: linear-gradient(40.6deg, #9D5FE1 -9.38%, #359CF5 50.36%, #0BD4E6 110.1%);
+
+
+  -webkit-background-clip: text; /* Safari & Chrome */
+  -webkit-text-fill-color: transparent; /* Transparent text to show bg */
+  background-clip: text; /* Standard */
+  color: transparent;
+  padding-top: 5rem;
+
+
+
+
+ }
+ .para-2-expert-team{
+  font-family: "Jost";
+font-weight: 700;
+/* font-style: Bold; */
+font-size: 35px;
+/* leading-trim: NONE; */
+line-height: 120%;
+letter-spacing: -2%;
+text-align: center;
+color: rgba(10, 17, 49, 1);
+padding-top: 0.1rem;
+
+ }
+ .main-div-experts{
+  /* flex: 1;  */
+  padding: clamp(10px, 2vw, 30px) clamp(15px, 5vw, 60px);
+  display: flex;
+  justify-content: space-between;
+  gap: 1.5rem;
+ }
+ .inner-card-1-expert{
+  width: 625px;
+  /* width: 100%; */
+  height: 327px;
+  /* flex: 0.5; */
+  border: 1px solid black;
+  background-color: rgba(10, 17, 49, 1);
+  display: flex;
+  gap: 1rem;
+  /* padding: 0px 2rem ; */
+  padding-right: 0.6rem ;
+ }
+ .yash-img img{
+  padding-top: 1rem;
+  padding-left: 1rem;
+ }
+ .main-yash-text-img-div{
+  display: flex;
+  /* gap: 1rem; */
+  /* justify-content: space-between; */
+  /* gap: 7rem; */
+  justify-content: space-between;
+ }
+  .yash-name{
+    font-family: "Jost";
+font-weight: 600;
+/* font-style: "SemiBold"; */
+font-size: 24px;
+/* ?leading-trim: NONE; */
+line-height: 120%;
+letter-spacing: -2%;
+color: rgba(255, 255, 255, 1);
+padding-top: 1.2rem;
+
+
+
+ } 
+ .yash-mess-call-div{
+  display: flex;
+  gap: 0.7rem;
+  padding-top: 1.2rem;
+ }
+ .para-2-expert-yash-about{
+  font-family: "Jost";
+font-weight: 500;
+/* font-style:" Medium"; */
+font-size: 18px;
+/* leading-trim: NONE; */
+line-height: 100%;
+letter-spacing: 0%;
+/* text-align: center; */
+background: linear-gradient(40.6deg, #9D5FE1 -9.38%, #359CF5 50.36%, #0BD4E6 110.1%);
+
+
+  -webkit-background-clip: text; /* Safari & Chrome */
+  -webkit-text-fill-color: transparent; /* Transparent text to show bg */
+  background-clip: text; /* Standard */
+  color: transparent;
+
+
+ }
+ .about-yash-expert{
+  font-family: "Jost";
+font-weight: 400;
+/* style: "Regular"; */
+font-size: 14.3px;
+max-width: 300px;
+/* border: 1px solid blue; */
+/* leading-trim: NONE; */
+line-height: 150%;
+letter-spacing: 0%;
+color: rgba(255, 255, 255, 1);
+padding-top: 0.9rem;
+/* color: aliceblue; */
+
+ }
+ .button-expert{
+  display: flex;
+  padding-top: 0.8rem;
+ }
+ /* .button-expert:hover{
+  border:1px solid blue
+ } */
+ .para-button-expert{
+  font-family: "Jost";
+font-weight: 500;
+/* font-style:" Medium"; */
+font-size: 16px;
+/* leading-trim: NONE; */
+line-height: 150%;
+letter-spacing: 0%;
+color: rgba(255, 255, 255, 1);
+/* padding-top: 1rem; */
+
+ }
+
+ .inner-card-2-expert{
+  width: 625px;
+  /* width: 100%; */
+  height: 327px;
+  /* flex: 0.5; */
+  /* border: 1px solid black; */
+  /* background-color: rgba(10, 17, 49, 1); */
+  display: flex;
+  gap: 1rem;
+  /* padding: 0px 2rem ; */
+  padding-right: 0.5rem ;
+  background-color: rgba(255, 255, 255, 1);
+  border: 3px solid white;
+ }
+ .deep-img img{
+  padding-top: 1rem;
+  padding-left: 1rem;
+ }
+ .main-deep-text-img-div{
+  display: flex;
+  /* gap: 1rem; */
+  /* justify-content: space-between; */
+  /* gap: 7rem; */
+  justify-content: space-between;
+ }
+ .deep-name{
+    font-family: "Jost";
+font-weight: 600;
+/* font-style: "SemiBold"; */
+font-size: 24px;
+/* ?leading-trim: NONE; */
+line-height: 120%;
+letter-spacing: -2%;
+color: rgba(255, 255, 255, 1);
+padding-top: 1.2rem;
+color: rgba(10, 17, 49, 1);
+}
+ .deep-mess-call-div{
+  display: flex;
+  gap: 0.7rem;
+  padding-top: 1.2rem;
+ }
+
+  .para-2-expert-deep-about{
+  font-family: "Jost";
+font-weight: 500;
+/* font-style:" Medium"; */
+font-size: 18px;
+/* leading-trim: NONE; */
+line-height: 100%;
+letter-spacing: 0%;
+/* text-align: center; */
+background: linear-gradient(40.6deg, #9D5FE1 -9.38%, #359CF5 50.36%, #0BD4E6 110.1%);
+
+
+  -webkit-background-clip: text; /* Safari & Chrome */
+  -webkit-text-fill-color: transparent; /* Transparent text to show bg */
+  background-clip: text; /* Standard */
+  color: transparent;}
+
+
+  .about-deep-expert{
+  font-family: "Jost" ;
+font-weight: 400;
+/* style: "Regular"; */
+font-size: 14.3px;
+max-width: 300px;
+/* border: 1px solid blue; */
+/* leading-trim: NONE; */
+line-height: 150%;
+letter-spacing: 0%;
+/* color: rgba(255, 255, 255, 1); */
+padding-top: 0.9rem;
+/* color: aliceblue; */
+color: rgba(10, 17, 49, 1);
+
+ }
+ .button-expert-deep{
+  display: flex;
+  padding-top: 0.8rem;
+
+ }
+ .para-button-expert-deep{
+   font-family: "Jost";
+font-weight: 500;
+/* font-style:" Medium"; */
+font-size: 16px;
+/* leading-trim: NONE; */
+line-height: 150%;
+letter-spacing: 0%;
+color: rgba(10, 17, 49, 1);
+
+ }
+
+ 
+
+ 
 
 
 
