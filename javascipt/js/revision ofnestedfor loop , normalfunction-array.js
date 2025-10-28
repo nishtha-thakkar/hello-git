@@ -244,6 +244,83 @@ function check(username){  //nishtha
 }      // passing array element in function
 
 
+console.log("closure")
+
+
+
+//closure  - bundle of function which is enclosed together
+// closure will create a lexical environment (inner function access or reference of outer function variable)
+// ek function ke andar dusare function ko call karana
+
+
+function show(name){
+    console.log(name)
+
+}
+show("batman")
+
+
+function outer(){
+    console.log("outer")
+    let a = 10;
+    let b = 5;
+
+    function inner(num1,num2){
+        console.log("inner")
+        console.log(num1 + num2)
+
+    }
+    inner(a,b)
+
+
+}
+outer()
+
+// ans is outer
+
+//      inner
+
+// 15
+
+
+function girl(){
+    console.log("girl")
+    kitty()
+}
+
+function kitty(){
+    console.log("kiitty")
+}
+girl()
+
+//
+console.log("method of array ")
+
+//1. push // to add new element in last and and they make new lenghth of array
+let arr = [1,2,3]
+
+arr.push(4 ,5)
+console.log(arr)
+
+
+// for for loop
+
+for (i = 0 ; i<arr.length ; i++){
+    console.log(arr[i])
+}
+arr.push(6,7)
+console.log(arr)
+
+// 3 
+
+let arr2 = []  // 0 1 2 3 4 5 6 7 8 
+for(let i = 0 ; i<=8 ; i++){
+    arr2.push( i)
+}
+console.log(arr2)
+
+
+
 
 
 
