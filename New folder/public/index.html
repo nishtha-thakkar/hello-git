@@ -72,7 +72,7 @@ section {
 
 
 .nav-links a,
-.nav-select {
+.dropbtn {
   text-decoration: none;
   /* font-size: clamp(14px, 1.2vw, 16px); responsive font */
   /* font-size: 14px; */
@@ -95,8 +95,7 @@ letter-spacing: 0%;
 }
 
 
-.nav-links a:hover
-.nav-select:hover {
+.nav-links a:hover {
   color: #007bff;
 }
 
@@ -130,6 +129,36 @@ letter-spacing: 0%;
 
 
 }
+.dropdown {
+  position: relative;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.dropdown-content a {
+  display: block;
+  padding: 12px 18px;
+  text-decoration: none;
+  color: #0b1135;
+  font-size: 12px;
+   min-width: 150px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 /* Hamburger Menu (hidden on desktop) */
 .menu-icon {
   display: none;
@@ -1174,7 +1203,7 @@ line-height: 150%;}
   .inner-div-2-img img,
   .inner-card-3-img img,
   .inner-card-4-img img {
-    margin: 0 auto;           center image
+    margin: 0 auto;           /*center image*/
   }
 
   .service-text-div p {
@@ -1937,7 +1966,7 @@ letter-spacing: 0%;
 font-weight: 400;
 font-style: Regular;
 font-size: 16px;
-leading-trim: NONE;
+/* leading-trim: NONE; */
 line-height: 150%;
 letter-spacing: 0%;
 
@@ -3093,10 +3122,14 @@ letter-spacing: 0%;
     <a href="index.html">Home</a>
     <a href="about.html">About Us</a>
     
-      <select class="nav-select" name="" id="">
-        <option value="">our service</option>
-      </select>
-    </a>
+      <div class="dropdown">
+         <a href="services.html"   class="dropbtn"   >Our Services <span>▼</span></a>
+        <div class="dropdown-content">
+          <a href="services.html">LLM Evaluation</a>
+          <a href="services.html">Repository Analysis</a>
+          <a href="services.html">Dev Tooling</a>
+        </div>
+      </div>
     <a href="#">Contact Us</a>
   </nav>
   <div class="button-0">

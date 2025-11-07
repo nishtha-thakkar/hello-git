@@ -52,7 +52,7 @@ section {
 }
 
 .nav-links a,
-.nav-select {
+.dropbtn{
   text-decoration: none;
   /* font-size: clamp(14px, 1.2vw, 16px); responsive font */
   /* font-size: 14px; */
@@ -72,14 +72,14 @@ section {
   letter-spacing: 0%;
 }
 
-.nav-links a:hover .nav-select:hover {
+.nav-links a:hover  {
   color: #007bff;
 }
 
 /* Button */
 .button-0 {
-  height: 40px;
-  width: 150px;
+  min-height: 40px;
+  min-width: 150px;
   border: 1px solid black;
   /* display: flex; */
   font-size: 14.5px;
@@ -117,6 +117,35 @@ section {
   text-decoration: underline;
   font-weight: bold;
 }
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.dropdown-content a {
+  display: block;
+  padding: 12px 18px;
+  text-decoration: none;
+  color: #0b1135;
+  font-size: 12px;
+   min-width: 150px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
 
 .hero {
   background-image: url("./about-image/hero-img.png");
