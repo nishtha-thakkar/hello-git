@@ -528,6 +528,9 @@ border: 1px solid black;
 background-color: rgba(255, 255, 255, 1);
 /* position: absolute; */
 overflow: hidden;
+padding: 1rem ;
+
+
 
 
 }
@@ -546,5 +549,39 @@ font-size: 18px;
 line-height: 150%;
 letter-spacing: 0%;
 color: rgba(10, 17, 49, 1);
-padding: 1rem ;
+
+
+}
+.main-div-circle-text{
+  display: flex;
+  flex-direction: row;
+  gap: 8px;
+  margin-top: 1rem;
+  
+
+}
+.circle{
+  /* border: 1px solid black; */
+  display: flex;
+  align-items: center;
+  /* padding-top: 2rem; */
+  margin-top: 0.5rem;
+  height: 9px;
+  width: 9px;
+  border-radius: 50%;
+  background: linear-gradient(40.6deg, #9D5FE1 -9.38%, #359CF5 50.36%, #0BD4E6 110.1%);
+
+
+
+}
+.inner-div-circle-text{
+  font-family: "Jost";
+font-weight: 400;
+/* font-style: Regular; */
+font-size: 15.5px;
+/* leading-trim: NONE; */
+line-height: 150%;
+letter-spacing: 0%;
+
+
 }
