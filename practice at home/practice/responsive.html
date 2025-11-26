@@ -1,0 +1,275 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  /*font-family: Arial, sans-serif;*/
+}
+section {
+  width: 100%;
+}
+.jost {
+  font-family: "Jost", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: clamp(10px, 2vw, 20px) clamp(15px, 5vw, 60px);
+  background: white;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #eee;
+  width: 100%;
+  gap: 2rem;
+}
+
+/* Logo */
+
+/* font-size: clamp(18px, 2vw, 26px); */
+/* font-weight: bold;
+  color: #007bff; */
+.logo img {
+  height: clamp(30px, 5vw, 50px); /* responsive height */
+  width: auto;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  /* gap: clamp(10px, 2vw, 30px); */
+  gap: 10px;
+}
+
+.nav-links a,
+.dropbtn{
+  text-decoration: none;
+  /* font-size: clamp(14px, 1.2vw, 16px); responsive font */
+  /* font-size: 14px; */
+  /* font-size: 14px; */
+  color: #333;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 5px 8px;
+  transition: color 0.3s ease;
+  font-family: "Jost" , sans-serif;
+  font-weight: 400;
+  /* font-style: Regular; */
+  font-size: 14px;
+  /* leading-trim: NONE; */
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.nav-links a:hover  {
+  color: #007bff;
+}
+
+/* Button */
+.button-0 {
+  min-height: 40px;
+  min-width: 150px;
+  border: 1px solid black;
+  /* display: flex; */
+  font-size: 14.5px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  /* margin-top: 1rem; */
+  display: flex;
+  /* text-align: center; */
+  align-items: center;
+  justify-content: center;
+  font-family: "Jost";
+  font-weight: 500;
+  font-style: Medium;
+  /* font-size: 16px; */
+  /* leading-trim: NONE; */
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+.button-0:hover {
+  background: linear-gradient(
+    135deg,
+    rgba(157, 95, 225, 1),
+    rgba(53, 156, 245, 1),
+    rgba(11, 212, 230, 1)
+  );
+}
+/* Hamburger Menu (hidden on desktop) */
+.menu-icon {
+  display: none;
+  font-size: clamp(20px, 3vw, 28px);
+  cursor: pointer;
+}
+/* .nav-select a.active {
+  text-decoration: underline;
+  font-weight: bold; */
+
+  .dropbtn.active {
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.dropdown-content a {
+  display: block;
+  padding: 12px 20px;
+  text-decoration: none;
+  color: #0b1135;
+  font-size: 12px;
+  min-width: 150px;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.dropdown:hover .dropdown-content {
+  display: block;}
+
+  @media(max-width:767px){
+    .logo img {
+  height: clamp(30px, 5vw, 50px); /* responsive height */
+  width: auto;
+}
+.menu-icon {
+  display: block;
+  font-size: clamp(20px, 3vw, 28px);
+  cursor: pointer;
+  position: relative;
+  display: block;
+  /* height: 300px; */
+  height: auto;
+  width: 50px;
+
+}
+.nav-links
+
+{
+  position: absolute;
+  /* display: block;  */
+  flex-direction: column;
+  background: white;
+    /* position: absolute; */
+    top: 60px;
+    right: 20px;
+    padding: 20px 25px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    gap: 10px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+
+
+  }
+  /* .nav-links a{
+    display: block;
+    min-width: 150px;
+    max-width: ;
+    
+  }  */
+  .nav-links:hover {
+    background-color: #eee;
+    display: block;
+    /* display: block; */
+    min-width: 90px; 
+    min-height: 10px; 
+    /* background-color: #f1f1f1; */
+    font-size: 14px;
+    z-index: 1000;
+    /* justify-content: left; */
+    /* align-content: flex-start; */
+    border: 1px solid black;
+  }
+ 
+  .button-0{
+    /* justify-content: center; */
+    /* left: 40px; */
+   min-height: 40px;
+   min-width: 120px;
+   /* right: -200px; */
+   /* left: 400px; */
+   /* justify-content:center ; */
+   left: -50px;
+
+  } 
+}
+
+    </style>
+ </head>
+ <body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="mediaqueryservice.css">
+</head>
+<body>
+     <div class="jost">
+
+         <header class="navbar">
+  <div class="logo">
+    <img src="/IMAGES/computer.jpg"  alt="">
+  </div>
+  <nav class="nav-links">
+    <a href="index.html">Home</a>
+    <a href="about.html" >About Us</a>
+    
+     <div class="dropdown">
+        <a href="services.html"  class="dropbtn active">Our Services <span>▼</span></a>
+        <div class="dropdown-content">
+          <a href="services.html">LLM Evaluation</a>
+          <a href="services.html">Repository Analysis</a>
+          <a href="services.html">Dev Tooling</a>
+        </div>
+      </div>
+    <a href="#">Porfolio</a>
+    <a href="#">Contact Us</a>
+  </nav>
+  <div class="button-0">
+    <p>Get In Touch </p>
+    <img src="./services-image/arrow-right-white.png" alt="">
+  </div>
+    <div class="menu-icon">☰</div>
+</header>
+
+
+
+
+  </div>
+    
+ </body>
+ </html>
