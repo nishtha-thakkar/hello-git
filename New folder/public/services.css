@@ -418,10 +418,12 @@ text-align: right;  */
 
 
 .main-sec-llm{
-  border: 2px solid black;
+  /* border: 2px solid black; */
   height:120vh;
   margin-top: 5rem;
   padding: clamp(10px, 2vw, 20px) clamp(15px, 5vw, 60px);
+  background: linear-gradient(40.6deg, rgba(157, 95, 225, 0.1) -9.38%, rgba(53, 156, 245, 0.1) 50.36%, rgba(11, 212, 230, 0.1) 110.1%);
+
   
 }
 .main-text-llm-img-div{
