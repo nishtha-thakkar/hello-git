@@ -1,0 +1,427 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.page-main-div{
+    background-color: #EACDBD;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* position: fixed;
+    left: 20px;
+    right: 20px;
+    top: 0px; */
+    padding: 20px;
+}
+.logo-div{
+    width: 120px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;  
+
+}
+.logo-div img{
+    width: 100%;
+    height: 100%;
+    
+}
+.links{
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+.links a{
+    text-decoration: none;
+    color: black;
+    
+}
+.btn-1 button{
+   padding: 10px 10px;
+   background-color: blue;
+   color: white;
+   border: none;
+  
+}
+.btn-1 button:hover{
+    cursor: pointer;
+}
+.main-div-img{
+    position: relative;
+}
+.coffee-img{
+    width: 100%;
+    height: 500px;
+}
+.coffee-img img{
+    width: 100%;
+    height: 100%;
+}
+.coffee-text{
+    position: absolute;
+    height: 500px;
+    top: 100px;
+    padding-left: 20px;
+}
+.btn-2 button{
+    padding: 8px 8px;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin-top: 2rem;
+    border: none;
+
+}
+.coffee-text p {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+.coffee-text h2{
+    color: #EACDBD ;
+    font-size: 60px;
+}
+.category-of-coffee{
+    padding: 20px;
+   
+}
+ .heading-explore-text{
+        margin-top: 4rem;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+     }
+     .main-1-div-img-text{
+        display: flex;
+        gap: 3rem;
+        /* justify-content: center; */
+        margin-top: 2rem;
+        justify-content: space-evenly;
+        
+     }
+     .heading-explore-text h2{
+        font-size: 24px;
+     }
+     .heading-explore-text p{
+        font-size: 18px;
+        margin-top: 0.1rem;
+     }
+     .main-div-img-text{
+        position: relative;
+     }
+     .text-variety-coffee-div{
+        position: absolute;
+        top: 0;
+        display: flex;
+        flex-direction: column;
+         justify-content: center; 
+        align-items: center; 
+        width: 100%;
+        height: 100%;
+     }
+     .img-div-variety-of-coffee{
+        width: 300px;
+        height: 300px;
+     }
+     .img-div-variety-of-coffee img{
+        width: 100%;
+        height: 100%;
+        border-radius: 60px;
+
+     }
+     .text-variety-coffee-div h2,
+      .text-variety-coffee-div p
+     {
+        color: white;
+     }
+     .text-variety-coffee-div p{
+        margin-top: 0.3rem;
+
+     }
+     .top-milk-shake-sec{
+        padding: 20px;
+     }
+     .main-div-text-shakes{
+        margin-top: 3rem;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+     }
+     .main-div-text-shakes h2{
+        font-size: 24px;
+     }
+      .main-div-text-shakes p{
+        font-size: 18px;
+        margin-top: 0.1rem;
+      }
+      .main-div-all-shake-img-text{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 3rem;
+      }
+      .card-1{
+        width: 300px;
+        height: 350px;
+        border: 1px solid gray;
+        border-radius: 40px;
+        background-color: #D2B5A5;
+        margin-top: 3rem;
+      }
+      .div-likes-and-icone{
+        width: 100px;
+        height: 20px;
+        border: 1px solid gray;
+        display: flex;
+        gap: 0.3rem;
+        padding-left: 0.2rem;
+        margin-left: 1rem;
+        margin-top: 1rem;
+        /* padding-top: 2rem; */
+        border-radius: 20px;
+        background-color: #DED5CB;
+      }
+      .main-img-mocha-shake{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+      }
+     
+      .img-shake{
+        width: 200px;
+        height: 200px;
+        
+        /* width: 100%; */
+      }
+
+      .img-shake img{
+        width: 100%;
+        height: 100%;
+      }
+       .main-img-mocha-shake p {
+        font-size: 20px;
+        font-weight: bold;
+       }
+       .main-div-rupees-button{
+        display: flex;
+        padding-top: 2rem;
+        padding-left: 2rem;
+        gap: 2rem;
+       }
+       .main-div-rupees-button button{
+        border: 1px solid black;
+        padding: 5px 50px;
+        background-color: black;
+        color: white;
+        border-radius: 20px;
+       }
+       .main-div-rupees-button p{
+        font-size: 20px;
+       }
+       .blog-sec{
+         padding: 20px;
+       }
+       .main-div-blog-text{
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         margin-top: 3rem;
+       }
+       .blog-sec h2{
+         font-size: 24px;
+       }
+        .blog-sec p{
+         font-size: 18px;
+       }
+       .main-div-card{
+         margin-top: 2rem;
+         display: flex;
+         /* align-items: center;
+         justify-content: center; */
+         justify-content: space-evenly;
+         gap: 5rem;
+       }
+       .card-3,
+       .card-4,
+       .card-5{
+         width: 300px;
+         height: 450px;
+         border: 1px solid black;
+         border-radius: 20px;
+         background-color: #D2B5A5;
+         
+
+       }
+       .blog-img-1{
+         width: 290px;
+         height: 200px;
+       }
+       .blog-img-1 img{
+         width: 100%;
+         height: 100%;
+         border-radius: 20px;
+        padding-left: 0.3rem;
+        padding-top: 0.3rem;
+
+       }
+       .card-3 h2,
+       .card-4 h2,
+       .card-5 h2{
+         padding-top: 1rem;
+         padding-left: 1rem;
+       }
+       .card-3 p,
+       .card-4 p,
+       .card-5 p{
+         text-align: justify;
+         font-size: 16px;
+         padding-left: 1rem;
+          padding-right: 0.5rem;
+          padding-top: 1rem;
+
+       }
+        .card-3 button,
+         .card-4 button,
+         .card-5 button{
+         background-color: black;
+         color: white;
+         border-radius: 20px;
+         padding: 5px 10px;
+         margin-top: 1rem;
+         /* padding-left: 0.2rem; */
+         margin-left: 1rem;
+        }
+        .main-footer{
+        
+         width: 100%;
+
+        }
+        .inner-footer{
+          padding: 20px;
+         
+         background-color: black;
+         display: flex;
+         justify-content: space-evenly;
+         /* gap: 3rem; */
+        }
+        .footer-1-text h2{
+         color: white;
+         font-weight: bold;
+        }
+        .footer-1-text p{
+         color: white;
+         /* font-weight: bold; */
+        }
+
+      
+     
+     
+     
+     @media (min-width:768px) and (max-width:1024px){
+         .main-1-div-img-text{
+            display: flex;
+            flex-wrap: wrap;
+         }
+         .main-div-all-shake-img-text{
+             display: flex;
+            flex-wrap: wrap;
+
+         }
+          .main-div-card{
+             display: flex;
+            flex-wrap: wrap;
+
+          }
+
+     }
+
+
+@media (min-width: 300px) and (max-width:768px){
+    nav{
+        padding: 10px;
+    }
+    .links a{
+        display: none;
+    }
+    
+     .links i {
+        display: none;
+     }
+     .category-of-coffee{
+        padding: 10px;
+     }
+     .coffee-text p{
+        font-size: 30px;
+     }
+     .coffee-text h2{
+        font-size: 40px;
+     }
+     .main-1-div-img-text{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+         }
+         .heading-explore-text p{
+            font-size: 16px;
+         }
+          .top-milk-shake-sec{
+        padding: 10px;
+     }
+     .main-div-all-shake-img-text{
+             display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+
+         }
+         .main-div-text-shakes p{
+            font-size: 16px;
+         }
+         .blog-sec{
+         padding: 10px;
+       }
+       .blog-sec h2{
+         font-size: 24px;
+       }
+        .blog-sec p{
+         font-size: 16px;
+       }
+        .main-div-card{
+             display: flex;
+            flex-wrap: wrap;
+            gap: 3rem;
+
+          }
+        
+          .inner-footer{
+             padding: 10px;
+            flex-direction: column;
+            gap: 1rem;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* margin-top: 2rem; */
+            
+
+            
+     
+          }
+          .footer-1-text{
+            margin-top: 1rem;
+          }
+          .footer-1-text h2{
+            font-size: 20px;
+          }
+         
+          
+     
+    }
+    
+     
