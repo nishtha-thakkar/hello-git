@@ -417,7 +417,8 @@ text-align: right;  */
 } */ 
 
 
-.main-sec-llm{
+.main-sec-llm,
+.main-sec-repositery{
   /* border: 2px solid black; */
   height:120vh;
   margin-top: 5rem;
@@ -426,10 +427,14 @@ text-align: right;  */
 
   
 }
-.main-text-llm-img-div{
+.main-text-llm-img-div,
+.main-text-repo-img-div{
   display: flex;
   justify-content:space-between  ;
   gap: 4rem;
+   position: relative;
+   
+
 }
 .dev-tooling-text{
   font-family: "Jost" , sans-serif;
@@ -495,11 +500,14 @@ color: rgba(255, 255, 255, 1);
   display: flex;
   color: white;
 }
-.img-div-llm{
+.img-div-llm,
+.img-div-repo{
   padding-top: 4rem;
-  position: relative;
+ 
+ 
 }
-.img-div-llm img{
+.img-div-llm img,
+.img-div-repo img{
   width: 625px;
 height: 414px;
 /* top: 1022px;
@@ -508,19 +516,20 @@ left: 735px; */
 /* opacity: 1; */
 
 }
-.main-card-div{
+.main-card-div
+{
   display: flex;
   gap: 1rem;
   position: absolute;
   /* bottom: -300px; */
-  top: 1280px;
+  top: 350px;
   /* padding: clamp(10px, 2vw, 20px) clamp(15px, 5vw, 60px); */
 }
 .card-1,
 .card-2,
 .card-3{
   /* position: absolute; */
-  width: 370px;
+  width: 371px;
 height: 260px;
 /* top: 1334px; */
 /* left: 80px; */
@@ -586,4 +595,11 @@ line-height: 150%;
 letter-spacing: 0%;
 
 
+}
+.main-card-div-1{
+  display: flex;
+  position: absolute;
+  gap: 1rem;
+top: 2080px;
+  
 }
